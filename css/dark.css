@@ -54,30 +54,35 @@
 
 /* used in responsive layout when only one month is shown (it is span containing year) */
 .t_line_month_year {
-	display: block;
 }
 
 /* node on the timeline */
 .timeline a.t_line_node {
-	text-decoration:none;
-	padding:38px 0 4px;
-	height:10px;
-	font-size:12px;
-	top:-25px;
-	background:url('../images/timeline/dark/dot.png') no-repeat center 24px;
-	color:#141817;
+	text-decoration: none;
+	font-size: 12px;
+	top: 0px;
+	color: #141817;
+	text-indent: -99999%;
+	background: #333;
+	height: 12px;
+	border-radius: 50px;
 }
+
+.timeline a.t_line_node span{
+	text-indent: 0%;
+}
+
 .timeline a.t_line_node:hover {
-	background:url('../images/timeline/dark/dot-rollover.png') no-repeat center 24px;
+	background: #69c;
 }
 .timeline a.t_line_node.active {
-	background:url('../images/timeline/dark/dot-selected.png') no-repeat center 24px;
+	background: #9cf;
 }
 
 /* node description */
 .timeline .t_node_desc {
 	background: rgba(26,134,172,0.9);
-	top:0;
+	top: 20px;
 	color:#fff;
 	padding:1px 5px;
 }

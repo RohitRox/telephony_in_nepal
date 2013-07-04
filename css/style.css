@@ -34,6 +34,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
   font-size:38px;
+  padding: 15px;
+  margin-bottom: 40px;
+  color: #fff;
+  margin-top: 0;
 }
 h2 {
   font-size:30px;
@@ -50,6 +54,39 @@ body {
   font-size:14px;
   margin:0;
   text-align:center;
+}
+.wrap{
+  min-height: 600px;
+  width: 920px;
+  margin: 0 auto;
+}
+.wrap-out{
+  width: 90%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: auto;
+  display: block;
+  padding: 2% 5%;
+}
+.timeline{
+  padding-bottom: 40px;
+}
+h1.index{
+  background: #1863A9;
+}
+.operators{
+  background: #EF685A;
+}
+.graphs{
+  background: #18CDE8;
+}
+.policies{
+  background: #0BC033;
+}
+.t_controles{
+  margin-top: 30px;
 }
 a {
   text-decoration:none;
