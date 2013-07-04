@@ -1,0 +1,181 @@
+
+.timelineLight .timeline_line {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.timelineLight .t_line_holder {
+	height:80px;
+	background:url('../images/timeline/light/line.jpg') repeat-x 0px 39px;
+}
+.timelineLight h3.t_line_year {
+	margin:0;
+	color:#545454;
+}
+.timelineLight .t_line_m {
+	margin-top:35px;
+	height:10px;
+	border-left:1px solid #545454;
+}
+.timelineLight .t_line_m.right {
+	border-right:1px solid #545454;
+}
+.timelineLight h4.t_line_month {
+	margin:-30px 0 0;
+	color:#545454;
+}
+.timelineLight a.t_line_node {
+	text-decoration:none;
+	padding:38px 0 4px;
+	height:10px;
+	font-size:12px;
+	top:-25px;
+	background:url('../images/timeline/light/dot.png') no-repeat center 24px;
+	color:#141817;
+}
+.timelineLight a.t_line_node:hover {
+	background:url('../images/timeline/light/dot-rollover.png') no-repeat center 24px;
+}
+.timelineLight a.t_line_node.active {
+	background:url('../images/timeline/light/dot-selected.png') no-repeat center 24px;
+}
+.timelineLight .t_node_desc {
+	background: rgba(26,134,172,0.9);
+	top:0;
+	color:#fff;
+	font-size:14px;
+	display:block;
+	padding:1px 5px;
+}
+.timelineLight #t_line_left {
+	cursor:pointer;
+	left:-30px;
+	top:30px;
+	width:14px;
+	height:19px;
+	background:url('../images/timeline/light/arrow.png') no-repeat left top;
+}
+
+.timelineLight #t_line_left:hover {
+	background:url('../images/timeline/light/arrow.png') no-repeat left bottom;
+}
+
+.timelineLight #t_line_right {
+	cursor:pointer;
+	right:-30px;
+	top:30px;
+	width:14px;
+	height:19px;
+	background:url('../images/timeline/light/arrow.png') no-repeat right top;
+}
+
+.timelineLight #t_line_right:hover {
+	background:url('../images/timeline/light/arrow.png') no-repeat right bottom;
+}
+
+.timelineLight .timeline_items {
+	padding:10px 0;
+}
+
+.timelineLight .item {
+	height:360px;
+	text-align:center;
+	background:url('../images/timeline/light/background-white.jpg') repeat; 
+	color:#545454;
+	-moz-box-shadow: -3px 1px 6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: -3px 1px 6px rgba(0,0,0,0.5);
+	box-shadow: -3px 1px 6px rgba(0,0,0,0.5);
+}
+
+
+
+.timelineLight .item img {
+	margin-top:0;
+}
+
+.timelineLight .item span{
+	display:block;
+	margin:0px 20px 10px;
+	font-style:italic;
+	font-size:14px;
+	line-height:17px;
+	height:97px;
+}
+.timelineLight .item .read_more {
+	padding:2px 8px 2px 10px;
+	font-family: 'BebasNeueRegular';
+	font-size:20px;
+	color:#ffffff;
+	background: rgba(0,0,0,0.25);
+	cursor:pointer;
+}
+
+.timelineLight .item .read_more:hover {
+	color:#313131;
+}
+
+.timelineLight .item_open {
+	height:360px;
+	background:url('../images/timeline/light/background.jpg') repeat;
+	position:relative;
+	color:#545454;
+	z-index:2; 
+	-moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+	
+	
+}
+
+.timelineLight .timeline_open_content {
+	padding:20px;
+}
+
+.timelineLight .item_open h2 {
+	margin-top:10px;
+	padding-top:0;
+	font-size:28px;
+}
+.timelineLight .item_open .t_close {
+	position:absolute;
+	top:10px;
+	right:10px;
+	padding:2px 8px 2px 10px;
+	font-family: 'BebasNeueRegular';
+	font-size:20px;
+	color:#dddddd;
+	background: rgba(0,0,0,0.25);
+	cursor:pointer;
+}
+.timelineLight .item_open .t_close:hover {
+	color:#545454;
+}
+
+.timelineLight .t_controles {
+	margin:10px auto;
+	text-align:center;
+}
+.timelineLight .t_left,
+.timelineLight .t_right {
+	display:inline-block;
+	height:50px;
+	width:29px;
+	margin:10px;
+	cursor:pointer;
+}
+.timelineLight .t_left,  
+.timelineLight .t_left:hover:active {
+	background: url('../images/timeline/light/big-arrow.png') no-repeat left top;
+}
+.timelineLight .t_left:hover {
+	background: url('../images/timeline/light/big-arrow.png') no-repeat left bottom;
+}
+
+.timelineLight .t_right, 
+.timelineLight .t_right:hover:active{
+	background: url('../images/timeline/light/big-arrow.png') no-repeat right top;
+}
+
+.timelineLight .t_right:hover {
+	background: url('../images/timeline/light/big-arrow.png') no-repeat right bottom;
+}
