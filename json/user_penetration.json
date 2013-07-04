@@ -1,0 +1,259 @@
+[
+{
+date: "14 May, 2013",
+ntc: 8795157,
+ncell: 10096130
+utl: 709834
+total: 77.11
+},
+{
+date: "13 April, 2013",
+ntc: 8705314,
+ncell: 9790860,
+utl: 698298,
+total: 75.46
+},
+{
+date: "13 March, 2013",
+ntc: 8595771,
+ncell: 9553404,
+utl: 698298,
+total: 73.88
+},
+{
+date: "11 February, 2013",
+ntc: 8503891,
+ncell: 9133305,
+utl: 682613,
+total: 71.90
+},
+{
+date: "13 January, 2013",
+ntc: 8414901,
+ncell: 9133305,
+utl: 682613,
+total: 71.51
+},
+{
+date: "15 December, 2012",
+ntc: 8314293,
+ncell: 9045751,
+utl: 674129,
+total: 70.61
+},
+{
+date: "15 November, 2012",
+ntc: 8220520,
+ncell: 8912643,
+utl: 667594,
+total: 69.63
+},
+{
+date: "14 October, 2012",
+ntc: 8062322,
+ncell: 8757281,
+utl: 660651,
+total: 68.13
+},
+{
+date: "14 September, 2012",
+ntc: 7964044,
+ncell: 8603223,
+utl: 653637,
+total: 67.15
+},
+{
+date: "14 August, 2012",
+ntc: 7893618,
+ncell: 8492497,
+utl: 645000,
+total: 66.14
+},
+{
+date: "14 July, 2012",
+ntc: 7756318,
+ncell: 8338065,
+utl: 637304,
+total: 64.91
+},
+{
+date: "14 June, 2012",
+ntc: 7715633,
+ncell: 8101779,
+utl: 631232,
+total: 63.76
+},
+{
+date: "14 May, 2012",
+ntc: 7633794,
+ncell: 7888010,
+utl: 623869,
+total: 62.56
+},
+{
+date: "14 April, 2012",
+ntc: 7570860,
+ncell: 7699070,
+utl: 616392,
+total: 61.42
+},
+{
+date: "14 March, 2012",
+ntc: 7522136,
+ncell: 7463071,
+utl: 613801,
+total: 60.34
+},
+{
+date: "14 February, 2012",
+ntc: 7435929,
+ncell: 7178008,
+utl: 604568,
+total: 58.66
+},
+{
+date: "14 January, 2012",
+ntc: 7364268,
+ncell: 7008777,
+utl: 597324,
+total: 57.56
+},
+{
+date: "14 December, 2011",
+ntc: 7269105,
+ncell: 6851561,
+utl: 591511,
+total: 56.46
+},
+{
+date: "14 November, 2011",
+ntc: 7180285,
+ncell: 6686871,
+utl: 588307,
+total: 55.41
+},
+{
+date: "14 October, 2011",
+ntc: 7046216,
+ncell: 6334011,
+utl: 585170,
+total: 53.50
+},
+{
+date: "14 September, 2011",
+ntc: 6883557,
+ncell: 6032938,
+utl: 582106,
+total: 48.14
+},
+{
+date: "14 August, 2011",
+ntc: 6835106,
+ncell: 5846365,
+utl: 578435,
+total: 47.27
+},
+{
+date: "14 July, 2011",
+ntc: 6743976,
+ncell: 5619224,
+utl: 573629,
+total: 46.05
+},
+{
+date: "15 June, 2011",
+ntc: 6637070,
+utl: 569142,
+total: 44.90
+},
+{
+date: "15 May, 2011",
+ntc: 6510034,
+utl: 562797,
+total: 43.65
+},
+{
+date: "15 April, 2011",
+ntc: 6439735,
+utl: 555986,
+total: 42.77
+},
+{
+date: "15 March, 2011",
+ntc: 6346808,
+utl: 545854,
+total: 41.51
+},
+{
+date: "15 February, 2011",
+ntc: 6326068,
+utl: 538833,
+total: 40.30
+},
+{
+date: "15 November, 2010",
+ntc: 5734247,
+utl: 510236,
+total: 36.37
+},
+{
+date: "15 October, 2010",
+ntc: 5655649,
+utl: 500519,
+total: 35.37
+},
+{
+date: "15 August, 2010",
+ntc: 5640839,
+utl: 490296,
+total: 34.33
+},
+{
+date: "15 July, 2010",
+ntc: 5608875,
+utl: 476351,
+total: 33.30
+},
+{
+date: "14 July, 2010",
+ntc: 5468191,
+utl: 460800,
+total: 31.85
+},
+{
+date: "14 June, 2010",
+ntc: 5249887,
+utl: 439150,
+total: 30.24
+},
+{
+date: "14 May, 2010",
+ntc: 5265041,
+utl: 418569,
+total: 29.68
+},
+{
+date: "14 April, 2010",
+ntc: 5170451,
+utl: 401605,
+total: 28.50
+},
+{
+date: "14 March, 2010",
+ntc: 4990190,
+utl: 350963,
+total: 27.70
+},
+{
+date: "14 February, 2010",
+ntc: 4990190,
+utl: 350963,
+total: 27.70
+},
+{
+date: "14 January, 2010",
+ntc: 4916218,
+utl: 328238,
+total: 27.15
+}
+]

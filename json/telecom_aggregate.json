@@ -1,0 +1,36 @@
+[{
+  date: "14 May , 2013",
+  mobile_penetration: 77.11,
+  internet_penetration: 25.67,
+},
+{
+  date: "15 December, 2012",
+  mobile_penetration: 70.61,
+  internet_penetration: 22.22
+},
+{
+  date: "14 June, 2012",
+  mobile_penetration: 63.76,
+  internet_penetration: 17.34
+},
+{
+  date: "14 December, 2011",
+  mobile_penetration: 56.46,
+  internet_penetration: 15.5
+},
+{
+  date: "15 June, 2011",
+  mobile_penetration: 44.90,
+  internet_penetration: 14.4
+},
+{
+  date: "15 November, 2010",
+  mobile_penetration: 36.37,
+  internet_penetration: 10.02
+},
+{
+  date: "14 June, 2010",
+  mobile_penetration: 30.24,
+  internet_penetration: 4.56
+}
+]

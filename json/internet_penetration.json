@@ -1,0 +1,397 @@
+[
+{
+date: "14 May, 2013",
+dial_up: 15425,
+wireless_modem_n_optical_fiber: 56896,
+cabel_modem: 18374,
+adsl: 109758,
+gprs_edge: 6254381,
+cdma_evdo: 229390,
+wimax: 1203,
+total: 25.23
+},
+{
+date: "13 April, 2013",
+dial_up: 15445,
+wireless_modem_n_optical_fiber: 50275,
+cabel_modem: 18330,
+adsl: 103447,
+gprs_edge: 6079353,
+cdma_evdo: 226509,
+wimax: 648,
+total: 24.51
+},
+{
+date: "13 March, 2013",
+dial_up: 15458,
+wireless_modem_n_optical_fiber: 50266,
+cabel_modem: 18275,
+adsl: 102521,
+gprs_edge: 5865902,
+cdma_evdo: 226509,
+wimax: 198,
+total: 23.69
+},
+{
+date: "11 February, 2013",
+dial_up: 16476,
+wireless_modem_n_optical_fiber: 50256,
+cabel_modem: 18226,
+adsl: 101808,
+gprs_edge: 5481184,
+cdma_evdo: 223439,
+wimax: 197,
+total: 22.23
+},
+{
+date: "13 January, 2013",
+dial_up: 15500,
+wireless_modem_n_optical_fiber: 49937,
+cabel_modem: 18185,
+adsl: 101019,
+gprs_edge: 5398143,
+cdma_evdo: 223439,
+wimax: 99,
+total: 21.91
+},
+{
+date: "15 December, 2012",
+dial_up: 15513,
+wireless_modem_n_optical_fiber: 49690,
+cabel_modem: 18158,
+adsl: 103304,
+gprs_edge: 5285030,
+cdma_evdo: 221852,
+wimax: 76,
+total: 21.49
+},
+{
+date: "15 November, 2012",
+dial_up: 14992,
+wireless_modem_n_optical_fiber: 45658,
+cabel_modem: 18097,
+adsl: 103204,
+gprs_edge: 5124857,
+cdma_evdo: 220162,
+total: 20.86
+},
+{
+date: "14 October, 2012",
+dial_up: 15008,
+wireless_modem_n_optical_fiber: 45618,
+cabel_modem: 17981,
+adsl: 99572,
+gprs_edge: 4895250,
+cdma_evdo: 204945,
+total: 19.92
+},
+{
+date: "14 September, 2012",
+dial_up: 15022,
+wireless_modem_n_optical_fiber: 45613,
+cabel_modem: 17981,
+adsl: 97725,
+gprs_edge: 4816688,
+cdma_evdo: 199918,
+total: 19.60
+},
+{
+date: "14 August, 2012",
+dial_up: 15037,
+wireless_modem_n_optical_fiber: 45612,
+cabel_modem: 17981,
+adsl: 88058,
+gprs_edge: 4782322,
+cdma_evdo: 196183,
+total: 19.32
+},
+{
+date: "14 July, 2012",
+dial_up: 15079,
+wireless_modem_n_optical_fiber: 45602,
+cabel_modem: 17968,
+adsl: 92302,
+gprs_edge: 4683921,
+cdma_evdo: 188219,
+total: 18.94
+},
+{
+date: "14 June, 2012",
+dial_up: 15087,
+wireless_modem_n_optical_fiber: 33798,
+cabel_modem: 17958,
+adsl: 86980,
+gprs_edge: 4605719,
+cdma_evdo: 184937,
+total: 18.57
+},
+{
+date: "14 May, 2012",
+dial_up: 15100,
+wireless_modem_n_optical_fiber: 33166,
+cabel_modem: 17708,
+adsl: 85104,
+gprs_edge: 4530415,
+cdma_evdo: 185761,
+total: 18.28
+},
+{
+date: "14 April, 2012",
+dial_up: 18747,
+wireless_modem_n_optical_fiber: 32279,
+cabel_modem: 17036,
+adsl: 83464,
+gprs_edge: 4332999,
+cdma_evdo: 183011,
+total: 17.53
+},
+{
+date: "14 March, 2012",
+dial_up: 18794,
+wireless_modem_n_optical_fiber: 32279,
+cabel_modem: 17036,
+adsl: 81661,
+gprs_edge: 4106961,
+cdma_evdo: 180958,
+total: 16.67
+},
+{
+date: "14 February, 2012",
+dial_up: 19520,
+wireless_modem_n_optical_fiber: 31636,
+cabel_modem: 17108,
+adsl: 78740,
+gprs_edge: 3868575,
+cdma_evdo: 177664,
+total: 15.75
+},
+{
+date: "14 January, 2012",
+dial_up: 19571,
+wireless_modem_n_optical_fiber: 31146,
+cabel_modem: 17112,
+adsl: 78390,
+gprs_edge: 3726912,
+cdma_evdo: 174534,
+total: 15.20
+},
+{
+date: "14 December, 2011",
+dial_up: 19671,
+wireless_modem_n_optical_fiber: 30495,
+cabel_modem: 16919,
+adsl: 77737,
+gprs_edge: 3555862,
+cdma_evdo: 173309,
+total: 14.55
+},
+{
+date: "14 November, 2011",
+dial_up: 19764,
+wireless_modem_n_optical_fiber: 30397,
+cabel_modem: 16898,
+adsl: 76740,
+gprs_edge: 3436564,
+cdma_evdo: 171078,
+total: 14.09
+},
+{
+date: "14 October, 2011",
+dial_up: 19610,
+wireless_modem_n_optical_fiber: 28687,
+cabel_modem: 15987,
+adsl: 77884,
+gprs_edge: 3281859,
+cdma_evdo: 167500,
+total: 13.49
+},
+{
+date: "14 September, 2011",
+dial_up: 19946,
+wireless_modem_n_optical_fiber: 24817,
+cabel_modem: 15943,
+adsl: 74102,
+gprs_edge: 3059958,
+cdma_evdo: 155487,
+total: 11.72
+},
+{
+date: "14 August, 2011",
+dial_up: 20039,
+wireless_modem_n_optical_fiber: 24555,
+cabel_modem: 16039,
+adsl: 71664,
+gprs_edge: 2991411,
+cdma_evdo: 153090,
+total: 11.46
+},
+{
+date: "14 July, 2011",
+dial_up: 20355,
+wireless_modem_n_optical_fiber: 22288,
+cabel_modem: 15629,
+adsl: 68343,
+gprs_edge: 2830695,
+cdma_evdo: 154548,
+total: 10.89
+},
+{
+date: "15 June, 2011",
+dial_up: 19067,
+wireless_modem_n_optical_fiber: 21080,
+cabel_modem: 14333,
+adsl: 66944,
+gprs_edge: 2667506,
+cdma_evdo: 151693,
+total: 10.28
+},
+{
+date: "15 May, 2011",
+dial_up: 25433,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 59780,
+gprs_edge: 2587705,
+cdma_evdo: 147568,
+total: 10.03
+},
+{
+date: "15 April, 2011",
+dial_up: 25569,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 58763,
+gprs_edge: 2181153,
+cdma_evdo: 186016,
+total: 8.74
+},
+{
+date: "15 March, 2011",
+dial_up: 25732,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 54813,
+gprs_edge: 2116597,
+cdma_evdo: 183715,
+total: 8.49
+},
+{
+date: "15 February, 2011",
+dial_up: 19827,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 43547,
+gprs_edge: 1977421,
+cdma_evdo: 181536,
+total: 7.93
+},
+{
+date: "15 November, 2010",
+dial_up: 26582,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 55080,
+gprs_edge: 1386787,
+cdma_evdo: 109152,
+total: 5.79
+},
+{
+date: "15 October, 2010",
+dial_up: 27056,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 51488,
+gprs_edge: 2232649,
+cdma_evdo: 101428,
+total: 8.76
+},
+{
+date: "15 August, 2010",
+dial_up: 27137,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 49406,
+gprs_edge: 1878650,
+cdma_evdo: 101464,
+total: 7.49
+},
+{
+date: "15 July, 2010",
+dial_up: 27265,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 48106,
+gprs_edge: 1541815,
+cdma_evdo: 101406,
+total: 6.29
+},
+{
+date: "14 July, 2010",
+dial_up: 27686,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 45435,
+gprs_edge: 1153643,
+total: 4.85
+},
+{
+date: "14 June, 2010",
+dial_up: 27990,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 41076,
+gprs_edge: 903495,
+cdma_evdo: 87261,
+total: 3.94
+},
+{
+date: "14 May, 2010",
+dial_up: 28075,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 35845,
+gprs_edge: 840397,
+cdma_evdo: 87261,
+total: 1035382
+},
+{
+date: "14 April, 2010",
+dial_up: 28863,
+wireless_modem_n_optical_fiber: 13000,
+cabel_modem: 32500,
+adsl: 33780,
+gprs_edge: 749929,
+cdma_evdo: 85160,
+total: 943232
+},
+{
+date: "14 March, 2010",
+dial_up: 28320,
+wireless_modem_n_optical_fiber: 12600,
+cabel_modem: 31500,
+adsl: 31047,
+gprs_edge: 566852,
+cdma_evdo: 85118,
+total: 755437
+},
+{
+date: "14 February, 2010",
+dial_up: 28320,
+wireless_modem_n_optical_fiber: 12600,
+cabel_modem: 32500,
+adsl: 31047,
+gprs_edge: 566852,
+cdma_evdo: 85118,
+total: 755437
+},
+{
+date: "14 January, 2010",
+dial_up: 28259,
+wireless_modem_n_optical_fiber: 12600,
+cabel_modem: 31500,
+adsl: 31169,
+gprs_edge: 542026,
+cdma_evdo: 84805,
+total: 730359
+}
+]
