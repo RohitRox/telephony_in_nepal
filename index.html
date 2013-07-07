@@ -17,9 +17,7 @@
 
 	<h1 class="index">Telephony In Nepal</h1>
 
-<!-- 	<iframe src='http://embed.verite.co/timeline/?source=0AqnAeu9bL-T3dE1ueU1ZZDRTd25kVjRlOU5TNmtQTmc&font=Bevan-PotanoSans&maptype=toner&lang=en&height=540' width='100%' height='540' frameborder='0'></iframe>
- -->
-  <iframe src='' width='100%' height='540' frameborder='0'></iframe>
+	<iframe src='http://embed.verite.co/timeline/?source=0AqnAeu9bL-T3dE1ueU1ZZDRTd25kVjRlOU5TNmtQTmc&font=Bevan-PotanoSans&maptype=toner&lang=en&height=540' width='100%' height='540' frameborder='0'></iframe>
 
 	<section class="wrap-out operators">
 		<h1>Telecom Service Providers</h1>
@@ -118,11 +116,11 @@
 	<h1>Statistics</h1>
 	<div class="wrap">
 		<div class="legend-group">
-      <div class="legend tele">
-        <div class="box"></div> Telephony Services Penetration
+      <div class="legend tele active" data-val="tele_penetration" data-color="FB5352">
+        <div class="list-box"></div> Telephony Services Penetration
       </div>
-      <div class="legend data">
-        <div class="box"></div> Data/Internet Services Penetration
+      <div class="legend data" data-val="internet_penetration" data-color="7ED043">
+        <div class="list-box"></div> Data/Internet Services Penetration
       </div>
     </div>
 		<div  id="canvas_telecom_glance"></div>
@@ -184,60 +182,34 @@
 <script src="js/modernizr.custom.js"></script>
 
 <script src="js/script.js"></script>
-<script>
+<script type="text/javascript">
 
-	function telecom_at_glance_init(){
-    var data = [{
-      date: "14 May , 2013",
-      tele_penetration: 77.11,
-      internet_penetration: 25.67,
-    },
-    {
-      date: "15 December, 2012",
-      tele_penetration: 70.61,
-      internet_penetration: 22.22
-    },
-    {
-      date: "14 June, 2012",
-      tele_penetration: 63.76,
-      internet_penetration: 17.34
-    },
-    {
-      date: "14 December, 2011",
-      tele_penetration: 56.46,
-      internet_penetration: 15.5
-    },
-    {
-      date: "15 June, 2011",
-      tele_penetration: 44.90,
-      internet_penetration: 14.4
-    },
-    {
-      date: "15 November, 2010",
-      tele_penetration: 36.37,
-      internet_penetration: 10.02
-    },
-    {
-      date: "14 June, 2010",
-      tele_penetration: 30.24,
-      internet_penetration: 4.56
-    }
-    ];
+  var data = [
+  {date: "14 June, 2010", tele_penetration: 30.24, internet_penetration: 4.56},
+  {date: "15 November, 2010", tele_penetration: 36.37, internet_penetration: 10.02},
+  {date: "15 June, 2011", tele_penetration: 44.9, internet_penetration: 14.4},
+  {date: "14 December, 2011", tele_penetration: 56.46, internet_penetration: 15.5},
+  {date: "14 June, 2012", tele_penetration: 63.76, internet_penetration: 17.34},
+  {date: "15 December, 2012", tele_penetration: 70.61, internet_penetration: 22.22},
+  {date: "14 May , 2013", tele_penetration: 77.11, internet_penetration: 25.67}
+  ];
+  var width = 920, height = 400;
+  var gap = Math.round((width/data.length));
 
-    var width = 920, height = 400;
-    var gap = Math.round((width/data.length));
-    var stage = new Kinetic.Stage({
+  function stage_init(){
+
+    window.stage = new Kinetic.Stage({
       container: 'canvas_telecom_glance',
       width: width,
       height: height,
       fill: "def"
     });
 
-    var layer = new Kinetic.Layer();
+    window.layer = new Kinetic.Layer();
 
     var line = new Kinetic.Line({
       points: [0, height, width, height],
-      stroke: "69c",
+      stroke: "fff",
       strokeWidth: 2,
     });
     layer.add(line);
@@ -248,16 +220,20 @@
       tmp += quater;
       var line = new Kinetic.Line({
         points: [0,height-tmp,width,height-tmp],
-        stroke: "69c",
+        stroke: "fff",
         strokeWidth: 1
       });
-      var per = new Kinetic.Text({x:4,y:height-tmp+4, text: 25*i+" %", fill: "69c", fontFamily: "Arial"});
+      var per = new Kinetic.Text({x:4,y:height-tmp+4, text: 25*i+" %", fill: "fff", fontFamily: "Arial"});
       layer.add(per);
       layer.add(line);
     }
-
     stage.add(layer);
+  }
 
+
+	function telecom_at_glance_init(data_selector, color_pref){
+
+    var layer = new Kinetic.Layer();
     var len = data.length, k =0,x = 0;
     window.p_arr = [];
 
@@ -269,21 +245,42 @@
           return false;
         }
       x = x + gap;
-      var self = data.pop();
-      var y = Math.round(((self.tele_penetration/100)*height));
+      var self = data[k];
+      var y = Math.round(((self[data_selector]/100)*height));
 
-      var layer = new Kinetic.Layer();
+      console.log(self[data_selector]);
       p_arr.push(x,height - y);
 
       var circ = new Kinetic.Circle({
         x: x, y: height - y,
-        fill: "FB5352",
+        fill: color_pref,
         strokeWidth: 6,
         radius: 0,
         stroke: "white"
       });
 
       layer.add(circ);
+
+      var poly = new Kinetic.Polygon({
+        points: [x-40, height-y-25, x-10, height-y-25, x, height-y-15, x+10, height-y-25, x+40, height-y-25, x+40, height-y-90, x-40, height-y-90],
+        fill: 'fff'
+      });
+
+      layer.add(poly);
+
+      var perce = new Kinetic.Text({
+        x:x-35,
+        y:height-y-69,
+        text: self[data_selector]+"%" ,
+        fontFamily: 'Arial',
+        fill: color_pref,
+        stroke: color_pref,
+        strokeWidth: 1,
+        fontSize: '22',
+        fontWeight: 'bold',
+        'z-index': '11'
+      });
+      layer.add(perce);
 
       (new Kinetic.Tween({
         node: circ,
@@ -292,27 +289,49 @@
         easing : Kinetic.Easings.BounceEaseIn
       })).play();
 
-      var date = new Kinetic.Text({x:x-40,y:height-20, text: self.date , fill: "def",fontFamily: 'Arial',stroke: "69c", strokeWidth: 1});
+      var date = new Kinetic.Text({x:x-40,y:height-15, text: self.date , fill: "198DB0",fontFamily: 'Arial',stroke: "117491", strokeWidth: 1, fontSize: '12'});
       layer.add(date);
       stage.add(layer);
       k++;
-    },1000);
+    },800);
 
     function join_points(){
       var line_join = new Kinetic.Line({
           points: p_arr,
-          stroke: "FB5352",
+          stroke: color_pref,
           strokeWidth: 6
         });
       layer.add(line_join);
       stage.add(layer);
     }
 
-  }
+    return layer;
 
+  }
+  var tele_layer = null, internet_layer = null;
   setTimeout(function(){
-  	telecom_at_glance_init();
+  	stage_init();
+    tele_layer = telecom_at_glance_init("tele_penetration","FB5352");
   },2000);
+
+  $('.legend').click(function(){
+    var _this = $(this);
+    _this.toggleClass('active');
+    if( _this.data("val") == "tele_penetration"){
+      if (internet_layer != null)
+        internet_layer.hide();
+      if (tele_layer === null)
+        tele_layer = telecom_at_glance_init(_this.data("val"), _this.data("color"));
+      else
+        tele_layer.show();
+    }else{
+      tele_layer.hide();
+      if (internet_layer === null)
+        internet_layer = telecom_at_glance_init(_this.data("val"), _this.data("color"));
+      else
+        internet_layer.show();
+    }
+  });
 
 
 </script>

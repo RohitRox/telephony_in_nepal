@@ -103,25 +103,34 @@ a img {
 .legend{
   float: left;
   padding: 6px;
+  cursor: pointer;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: .8;
 }
-.legend .box{
+.legend .list-box{
   height: 16px;
   width: 16px;
   float: left;
   margin-right: 5px;
   margin-top: 1px;
 }
-.legend.tele .box{
+.legend.tele .list-box{
   background: #FB5352;
 }
 .legend.tele{
-  color: #FB5352
+  color: #FB5352;
 }
-.legend.data .box{
+.legend.data .list-box{
   background: #3CBEA0;
 }
 .legend.data{
   color: #3CBEA0;
+}
+.legend.active, .legend:hover{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1
 }
 
 /*operators*/
