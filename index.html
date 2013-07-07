@@ -7,12 +7,9 @@
 
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 
-	<!--[if lt IE 9]>
-	<link href="css/ie8fix.css" rel="stylesheet" type="text/css" />
-	<![endif]-->
-
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/kinetic.min.js"></script>
 
 </head>
 
@@ -27,6 +24,14 @@
 		<h1>Telecom Service Providers</h1>
 
 		<div class="wrap">
+			<div class="overview">
+			Total 4 Operators<br />
+			Lorema N' Epseoj
+			<br />
+			<br />
+			Dqsuqe Ol Guera<br />
+			Lokine ma Thorung
+		</div>
 			<div class="circle-holder1 circles" id="circle1">
 		<div class="box ntc"><img src="images/ntc-logo.png" alt="" ></div>
 		<div class="text">
@@ -63,9 +68,18 @@
 
 	</section>
 
-<section class="wrap-out graphs">
+<section class="wrap-out graphs" >
 	<h1>Statistics</h1>
 	<div class="wrap">
+		<div class="legend-group">
+      <div class="legend tele">
+        <div class="box"></div> Telephony Services Penetration
+      </div>
+      <div class="legend data">
+        <div class="box"></div> Data/Internet Services Penetration
+      </div>
+    </div>
+		<div  id="canvas_telecom_glance"></div>
 
 	</div>
 
@@ -125,7 +139,138 @@
 
 <script src="js/jquery.fittext.js"></script>
 <script src="js/script.js"></script>
+<script>
 
+	function telecom_at_glance_init(){
+    var data = [{
+      date: "14 May , 2013",
+      tele_penetration: 77.11,
+      internet_penetration: 25.67,
+    },
+    {
+      date: "15 December, 2012",
+      tele_penetration: 70.61,
+      internet_penetration: 22.22
+    },
+    {
+      date: "14 June, 2012",
+      tele_penetration: 63.76,
+      internet_penetration: 17.34
+    },
+    {
+      date: "14 December, 2011",
+      tele_penetration: 56.46,
+      internet_penetration: 15.5
+    },
+    {
+      date: "15 June, 2011",
+      tele_penetration: 44.90,
+      internet_penetration: 14.4
+    },
+    {
+      date: "15 November, 2010",
+      tele_penetration: 36.37,
+      internet_penetration: 10.02
+    },
+    {
+      date: "14 June, 2010",
+      tele_penetration: 30.24,
+      internet_penetration: 4.56
+    }
+    ];
+
+    var width = 920, height = 400;
+    var gap = Math.round((width/data.length));
+    var stage = new Kinetic.Stage({
+      container: 'canvas_telecom_glance',
+      width: width,
+      height: height,
+      fill: "def"
+    });
+
+    var layer = new Kinetic.Layer();
+
+    var line = new Kinetic.Line({
+      points: [0, height, width, height],
+      stroke: "69c",
+      strokeWidth: 2,
+    });
+    layer.add(line);
+
+    var quater = Math.round((height/4));
+    var tmp = 0;
+    for(var i=1; i<=4;i++){
+      tmp += quater;
+      var line = new Kinetic.Line({
+        points: [0,height-tmp,width,height-tmp],
+        stroke: "69c",
+        strokeWidth: 1
+      });
+      var per = new Kinetic.Text({x:4,y:height-tmp+4, text: 25*i+" %", fill: "69c", fontFamily: "Arial"});
+      layer.add(per);
+      layer.add(line);
+    }
+
+    stage.add(layer);
+
+    var len = data.length, k =0,x = 0;
+    window.p_arr = [];
+
+    window.handle = setInterval(function(){
+      if( k == len-1)
+        {
+          clearInterval(handle);
+          join_points();
+          return false;
+        }
+      x = x + gap;
+      var self = data.pop();
+      var y = Math.round(((self.tele_penetration/100)*height));
+
+      var layer = new Kinetic.Layer();
+      p_arr.push(x,height - y);
+
+      var circ = new Kinetic.Circle({
+        x: x, y: height - y,
+        fill: "FB5352",
+        strokeWidth: 6,
+        radius: 0,
+        stroke: "white"
+      });
+
+      layer.add(circ);
+
+      (new Kinetic.Tween({
+        node: circ,
+        radius: 14,
+        duration: .5,
+        easing : Kinetic.Easings.BounceEaseIn
+      })).play();
+
+      var date = new Kinetic.Text({x:x-40,y:height-20, text: self.date , fill: "def",fontFamily: 'Arial',stroke: "69c", strokeWidth: 1});
+      layer.add(date);
+      stage.add(layer);
+      k++;
+    },1000);
+
+    function join_points(){
+      var line_join = new Kinetic.Line({
+          points: p_arr,
+          stroke: "FB5352",
+          strokeWidth: 6
+        });
+      layer.add(line_join);
+      stage.add(layer);
+    }
+
+  }
+
+  setTimeout(function(){
+  	telecom_at_glance_init();
+  },2000);
+
+
+</script>
 
 </body>
 </html>

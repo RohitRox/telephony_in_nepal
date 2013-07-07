@@ -233,6 +233,42 @@ td {
     background: #f2f2f2;
 }
 
+/* graphs */
+
+#canvas_telecom_glance canvas{
+  left: 0;
+}
+
+.legend-group{
+  float: right;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+.legend{
+  float: left;
+  padding: 6px;
+}
+.legend .box{
+  height: 16px;
+  width: 16px;
+  float: left;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+.legend.tele .box{
+  background: #FB5352;
+}
+.legend.tele{
+  color: #FB5352
+}
+.legend.data .box{
+  background: #3CBEA0;
+}
+.legend.data{
+  color: #3CBEA0;
+}
+
 /*operators*/
 
 .operators .wrap {
@@ -244,13 +280,19 @@ td {
   min-height: auto;
   border: 1px solid #bbb;
 }
-
+.overview{
+  font-size: 2em;
+  font-family: impact;
+  margin-top: 25%;
+  line-height: 2em;
+}
 .box {
   width: 140px;
   line-height: 140px;
   background: red;
   margin-bottom: 30px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .box img{
   vertical-align: middle;

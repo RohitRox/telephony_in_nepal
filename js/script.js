@@ -51,8 +51,8 @@ $('.circles').click(function(){
 					$('#circle').animate({
                         'width'     :'420px',
                         'height'    :'420px',
-                        'top'       :'40px',
-                        'left'      :'40px',
+                        'top'       :'32px',
+                        'left'      :'32px',
                         'opacity'   :'1.0',
                         'border-radius' : '50%',
                         'padding' : '40px'
@@ -69,8 +69,8 @@ $('.circles').click(function(){
 			}).animate({
 	                        'width'     :'420px',
 	                        'height'    :'420px',
-	                        'top'       :'40px',
-	                        'left'      :'40px',
+	                        'top'       :'32px',
+	                        'left'      :'32px',
 	                        'opacity'   :'1.0',
 	                        'border-radius' : '50%',
 	                        'padding' : '40px'
