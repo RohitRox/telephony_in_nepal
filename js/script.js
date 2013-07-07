@@ -11,13 +11,13 @@ $('.circles').click(function(){
 		if($('#circle').hasClass('small')) {
 
 			$('#circle').animate({
-                        'width'     :'420px',
-                        'height'    :'420px',
-                        'top'       :'40px',
-                        'left'      :'40px',
-                        'opacity'   :'1.0',
+                        'width'     :'340px',
+                        'height'    :'340px',
+                        'top'       :'30px',
+                        'left'      :'30px',
+                        'opacity'   :'1',
                         'border-radius' : '50%',
-                        'padding' : '40px'
+                        'padding' : '80px'
                        },300,'easeInCirc', function(){
                        	$('#circle div').fadeIn('slow');
                        });
@@ -49,13 +49,13 @@ $('.circles').click(function(){
 		if($('#circle').hasClass('small')) {
 
 					$('#circle').animate({
-                        'width'     :'420px',
-                        'height'    :'420px',
-                        'top'       :'32px',
-                        'left'      :'32px',
-                        'opacity'   :'1.0',
+                        'width'     :'340px',
+                        'height'    :'340px',
+                        'top'       :'30px',
+                        'left'      :'30px',
+                        'opacity'   :'1',
                         'border-radius' : '50%',
-                        'padding' : '40px'
+                        'padding' : '80px'
 	                    },300,'easeInCirc', function(){ $('#circle div').fadeIn('slow'); });
 		}
 		else{
@@ -67,13 +67,13 @@ $('.circles').click(function(){
                         'opacity'   :'1',
                         'padding'   :'0px'
 			}).animate({
-	                        'width'     :'420px',
-	                        'height'    :'420px',
-	                        'top'       :'32px',
-	                        'left'      :'32px',
-	                        'opacity'   :'1.0',
+	                        'width'     :'340px',
+	                        'height'    :'340px',
+	                        'top'       :'30px',
+	                        'left'      :'30px',
+	                        'opacity'   :'1',
 	                        'border-radius' : '50%',
-	                        'padding' : '40px'
+	                        'padding' : '80px'
 	                       },300,'easeInCirc', function(){ $('#circle div').fadeIn('slow'); });
 		}
 		$('#circle').attr('class', id);

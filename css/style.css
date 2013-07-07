@@ -188,8 +188,9 @@ a img {
 #circle {
   width: 32px;
   height: 32px;
-  background: #ffb502;
+  background: rgba(0,0,0,.9);
   border-radius: 20px;
+  color: #fff;
   margin: 0 auto;
   clear: both;
   position: absolute;
@@ -198,6 +199,23 @@ a img {
   left: 270px;
 }
 
+#circle b{
+  color: #def;
+  font-family: quicksandbook;
+  line-height: 26px;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px #000;
+}
+.close{
+  cursor: pointer;
+  background: rgb(160, 41, 36);
+  padding: 2px 8px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000;
+}
+.close:hover{
+  background: rgb(192, 50, 44);
+}
 .text {
   display: none;
 }
