@@ -6,13 +6,13 @@ $('.circles').click(function(){
 	var that = $(this);
 	var id = $(this).attr('id');
 
-	if($('#circle').hasClass(id)) 
+	if($('#circle').hasClass(id))
 	{
 		if($('#circle').hasClass('small')) {
 
 			$('#circle').animate({
-                        'width'     :'520px',
-                        'height'    :'520px',
+                        'width'     :'420px',
+                        'height'    :'420px',
                         'top'       :'40px',
                         'left'      :'40px',
                         'opacity'   :'1.0',
@@ -24,23 +24,23 @@ $('.circles').click(function(){
 
 			$('#circle').removeClass('small').css('text-indent','0px');
 		}
-		else 
+		else
 		{
 			$('#circle').animate({
                         'width'     :'32px',
                         'height'    :'32px',
-                        'top'       :'342px',
-                        'left'      :'342px',
+                        'top'       :'270px',
+                        'left'      :'270px',
                         'opacity'   :'1',
                         'padding'   :'0px'
                         },300,'easeInCirc');
 			$('#circle div').fadeOut();
 			$('#circle').addClass('small').css('text-indent','-9999px');
 		}
-		
+
 	}
-	else 
-	{	
+	else
+	{
 
 		$('#circle div').hide();
 		var abc = $(that).find('.text').html();
@@ -49,8 +49,8 @@ $('.circles').click(function(){
 		if($('#circle').hasClass('small')) {
 
 					$('#circle').animate({
-                        'width'     :'520px',
-                        'height'    :'520px',
+                        'width'     :'420px',
+                        'height'    :'420px',
                         'top'       :'40px',
                         'left'      :'40px',
                         'opacity'   :'1.0',
@@ -62,13 +62,13 @@ $('.circles').click(function(){
 			$('#circle').animate({
 						'width'     :'32px',
                         'height'    :'32px',
-                        'top'       :'342px',
-                        'left'      :'342px',
+                        'top'       :'270px',
+                        'left'      :'270px',
                         'opacity'   :'1',
                         'padding'   :'0px'
 			}).animate({
-	                        'width'     :'520px',
-	                        'height'    :'520px',
+	                        'width'     :'420px',
+	                        'height'    :'420px',
 	                        'top'       :'40px',
 	                        'left'      :'40px',
 	                        'opacity'   :'1.0',
@@ -77,9 +77,9 @@ $('.circles').click(function(){
 	                       },300,'easeInCirc', function(){ $('#circle div').fadeIn('slow'); });
 		}
 		$('#circle').attr('class', id);
-		
+
 	}
-	
+
 
 });
 
@@ -89,10 +89,10 @@ $('.circles').click(function(){
     $('#circle').animate({
                         'width'     :'32px',
                         'height'    :'32px',
-                        'top'       :'342px',
-                        'left'      :'342px',
+                        'top'       :'270px',
+                        'left'      :'270px',
                         'opacity'   :'1',
-                        'padding'   :'0px' 
+                        'padding'   :'0px'
                         },300,'easeOutCirc');
             $('#circle div').fadeOut('fast');
             $('#circle').addClass('small').css('text-indent','-9999px');

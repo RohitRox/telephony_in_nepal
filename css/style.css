@@ -90,6 +90,7 @@ h1.index{
 }
 .operators{
   background: #ddd;
+  padding-bottom: 70px;
 }
 .graphs{
   background: #18CDE8;
@@ -238,18 +239,35 @@ td {
   position: relative;
   border-radius: 50%;
   background: #fff;
-  height: 680px;
-  width: 680px;
+  height: 560px;
+  width: 560px;
+  min-height: auto;
   border: 1px solid #bbb;
 }
 
 .box {
-  width: 40px;
-  height: 40px;
+  width: 140px;
+  line-height: 140px;
   background: red;
   margin-bottom: 30px;
+  border-radius: 50%;
 }
+.box img{
+  vertical-align: middle;
+  display: inline-block;
+}
+.ntc{
+  background: #369;
+}
+.ncell{
 
+}
+.utl{
+
+}
+.smart-telecom{
+
+}
 .circles {
   margin-right: 20px;
   float: left;
@@ -257,23 +275,23 @@ td {
 }
 
 .circle-holder1 {
-  top: -20px;
-  left: 49%;
+  top: -50px;
+  left: 220px;
 }
 
 .circle-holder2 {
-  top: 50%;
-  right: -40px;
+  top: 200px;
+  right: -80px;
 }
 
 .circle-holder3 {
-  top: 50%;
-  left: -20px;
+  top: 200px;
+  left: -60px;
 }
 
 .circle-holder4 {
-  bottom: -50px;
-  left: 49%;
+  bottom: -80px;
+  left: 220px;
 }
 
 #circle {
@@ -284,8 +302,8 @@ td {
   margin: 0 auto;
   clear: both;
   position: absolute;
-  top: 342px;
-  left: 342px;
+  top: 270px;
+  left: 270px;
 }
 
 .text {
