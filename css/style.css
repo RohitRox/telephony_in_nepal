@@ -277,8 +277,8 @@ td {
 }
 
 #circle {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   background: #ffb502;
   border-radius: 20px;
   margin: 0 auto;
