@@ -13,7 +13,6 @@
 
 }
 
-
 h1,h2,h3,h4,h5,h6 {
   font-weight: normal;
   color:#313131;
@@ -137,10 +136,12 @@ a img {
   border: 1px solid #bbb;
 }
 .overview{
-  font-size: 2em;
-  font-family: impact;
+  font-size: 1em;
   margin-top: 25%;
   line-height: 2em;
+  font-family: verdana;
+  font-weight: 100;
+  letter-spacing: 0px;
 }
 .box {
   width: 140px;
@@ -149,22 +150,14 @@ a img {
   margin-bottom: 30px;
   border-radius: 50%;
   cursor: pointer;
+  border: 4px solid transparent;
+}
+.box:hover{
+  border-color: #fff;
 }
 .box img{
   vertical-align: middle;
   display: inline-block;
-}
-.ntc{
-  background: #369;
-}
-.ncell{
-
-}
-.utl{
-
-}
-.smart-telecom{
-
 }
 .circles {
   margin-right: 20px;
@@ -200,6 +193,7 @@ a img {
   margin: 0 auto;
   clear: both;
   position: absolute;
+  opacity: 0;
   top: 270px;
   left: 270px;
 }
@@ -210,6 +204,55 @@ a img {
 
 #circle div{
   display: none;
+}
+
+.stats-bar{
+  width: 280px;
+  border: 1px solid #ccc;
+  height: 20px;
+  margin: 0 auto;
+  padding: 1px;
+  box-shadow: inset 0px 0px 4px #ccc;
+  position: relative;
+}
+.stats-bar span{
+  height: 20px;
+  float: left;
+}
+.green{
+  background: #8CC63E;
+}
+.blue{
+  background: #2A6FA1;
+}
+.red{
+  background: #E42741;
+}
+.orange{
+  background: #F3912E;
+}
+.yellow{
+  background: #F2A544;
+}
+.gray{
+  background: #777;
+}
+.purple{
+  background: #9F85B2;
+}
+.blue-hue{
+  background: #4748AA;
+}
+.stats-details ul{
+  margin: 8px 40px;
+  padding: 0px;
+}
+.stats-details li{
+  display: inline-block;
+  color: #fff;
+  padding: 0px 4px;
+  font-size: 12px;
+  line-height: 20px
 }
 
 

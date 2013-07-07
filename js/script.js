@@ -31,7 +31,7 @@ $('.circles').click(function(){
                         'height'    :'32px',
                         'top'       :'270px',
                         'left'      :'270px',
-                        'opacity'   :'1',
+                        'opacity'   :'0',
                         'padding'   :'0px'
                         },300,'easeInCirc');
 			$('#circle div').fadeOut();
@@ -91,7 +91,7 @@ $('.circles').click(function(){
                         'height'    :'32px',
                         'top'       :'270px',
                         'left'      :'270px',
-                        'opacity'   :'1',
+                        'opacity'   :'0',
                         'padding'   :'0px'
                         },300,'easeOutCirc');
             $('#circle div').fadeOut('fast');
