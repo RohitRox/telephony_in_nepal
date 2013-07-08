@@ -245,7 +245,7 @@ $(document).ready(function(){
 
   $('.legend').click(function(){
     var _this = $(this);
-    _this.toggleClass('active');
+    _this.toggleClass('active').siblings().removeClass('active');
     if( _this.data("val") == "tele_penetration"){
       if (internet_layer != null)
         internet_layer.hide();
