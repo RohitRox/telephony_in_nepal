@@ -116,13 +116,13 @@ $(document).ready(function(){
 
 
   var data = [
-  {date: "14 June, 2010", tele_penetration: 30.24, internet_penetration: 4.56},
-  {date: "15 November, 2010", tele_penetration: 36.37, internet_penetration: 10.02},
-  {date: "15 June, 2011", tele_penetration: 44.9, internet_penetration: 14.4},
-  {date: "14 December, 2011", tele_penetration: 56.46, internet_penetration: 15.5},
-  {date: "14 June, 2012", tele_penetration: 63.76, internet_penetration: 17.34},
-  {date: "15 December, 2012", tele_penetration: 70.61, internet_penetration: 22.22},
-  {date: "14 May , 2013", tele_penetration: 77.11, internet_penetration: 25.67}
+  {date: "14 June, 2010", tele_penetration: 30.24, internet_penetration: 4.56, mobile_penetration: 25.75},
+  {date: "15 December, 2010", tele_penetration: 36.37, internet_penetration: 10.02, mobile_penetration: 31.56 },
+  {date: "15 June, 2011", tele_penetration: 44.9, internet_penetration: 10.28, mobile_penetration: 39.53},
+  {date: "14 December, 2011", tele_penetration: 56.46, internet_penetration: 14.55, mobile_penetration: 50.16},
+  {date: "14 June, 2012", tele_penetration: 63.76, internet_penetration: 18.75, mobile_penetration: 56.55},
+  {date: "15 December, 2012", tele_penetration: 70.61, internet_penetration: 22.22, mobile_penetration: 62.68},
+  {date: "14 April , 2013", tele_penetration: 75.46, internet_penetration: 25.67, mobile_penetration: 66.96 }
   ];
   var width = 920, height = 420;
   var gap = Math.round((width/data.length));
@@ -240,7 +240,7 @@ $(document).ready(function(){
 
   }
 
-  var tele_layer = null, internet_layer = null;
+  var tele_layer = null, internet_layer = null, mobile_layer = null;
   setTimeout(function(){
   	stage_init();
     tele_layer = telecom_at_glance_init("tele_penetration","#00b1e1");
@@ -252,27 +252,30 @@ $(document).ready(function(){
     if( _this.data("val") == "tele_penetration"){
       if (internet_layer != null)
         internet_layer.hide();
+      if (mobile_layer != null)
+        mobile_layer.hide();
       if (tele_layer === null)
         tele_layer = telecom_at_glance_init(_this.data("val"), _this.data("color"));
       else
         tele_layer.show();
+    }else if(_this.data("val")=="mobile_penetration"){
+      tele_layer.hide();
+      if (internet_layer != null)
+        internet_layer.hide();
+      if (mobile_layer === null)
+        mobile_layer = telecom_at_glance_init(_this.data("val"), _this.data("color"));
+      else
+        mobile_layer.show();
     }else{
       tele_layer.hide();
+      if (mobile_layer != null)
+        mobile_layer.hide();
       if (internet_layer === null)
         internet_layer = telecom_at_glance_init(_this.data("val"), _this.data("color"));
       else
         internet_layer.show();
     }
-  });
-
-   $('.tele').click(function(){
-    $('.graphs').removeClass('data-green');
-    $(this).parent('.legend-group').parent('.wrap').parent('.graphs').addClass('data-blue');
-  });
-
-  $('.data').click(function(){
-    $('.graphs').removeClass('data-blue');
-    $(this).parent('.legend-group').parent('.wrap').parent('.graphs').addClass('data-green');
+    $('section.graphs').css({background: _this.data("color")});
   });
 
 jQuery.fn.center = function () {
@@ -305,7 +308,7 @@ $(document).ready(function ($) {
     dataslide = $(this).attr('data-slide');
       currIndex = parseInt(dataslide);
 
-      if (scrolling) {      
+      if (scrolling) {
         links.removeClass("active");
       if (direction === 'down') {
         $('.navigation li[data-slide="' + dataslide + '"]').addClass("active");
@@ -313,29 +316,29 @@ $(document).ready(function ($) {
         $('.navigation li[data-slide="' + dataslide + '"]').prev().addClass("active");
       }
       }
-      
+
       //GESTISCO LE GIF VISIBILI
       if (direction == "down") {
         $("#slide" + (parseInt(dataslide) - 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) - 1) + "_still.gif')");
         $("#slide" + (parseInt(dataslide) + 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) + 1) + ".gif')");
       } else {
         $("#slide" + (parseInt(dataslide) + 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) + 1) + "_still.gif')");
-        $("#slide" + (parseInt(dataslide) - 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) - 1) + ".gif')");        
+        $("#slide" + (parseInt(dataslide) - 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) - 1) + ".gif')");
       }
-      
+
       if ($("#slide" + dataslide).css("backgroundImage") == "url('ui/img/anims/slide" + dataslide + "_still.gif')")
         $("#slide" + dataslide).css("backgroundImage","url('ui/img/anims/slide" + dataslide + ".gif')");
   });
 
-    //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class 
-    //from navigation link slide 2 and adds it to navigation link slide 1. 
+    //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class
+    //from navigation link slide 2 and adds it to navigation link slide 1.
     mywindow.scroll(function () {
         if (mywindow.scrollTop() == 0) {
           links.removeClass("active");
           $('.navigation li[data-slide="1"]').addClass('active');
             currIndex = 1;
         }
-        
+
         if (isMobile) {
         currIndex = Math.floor(mywindow.scrollTop() / $(".wrap-out").height()) + 1;
         }
@@ -359,7 +362,7 @@ $(document).ready(function ($) {
 
         links.removeClass("active");
         $(this).addClass("active");
-        
+
         scrolling = false;
         goToByScroll(dataslide);
     });
@@ -371,7 +374,7 @@ $(document).ready(function ($) {
         goToByScroll(dataslide);
 
     });
-    
+
   // Keyboard events
   $(document).on('keydown', function(e){
     // up/left arrow = scroll up -  || e.keyCode == 38
@@ -392,9 +395,9 @@ $(document).ready(function ($) {
 
       goToByScroll(currIndex + 1); // RECUPERARE LA SLIDE SUCCESSIVA
     }
-  });    
-  
+  });
 
-    
+
+
 });
 
