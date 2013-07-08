@@ -179,7 +179,7 @@ $(document).ready(function(){
       var self = data[k];
       var y = Math.round(((self[data_selector]/100)*height));
 
-      console.log(self[data_selector]);
+      // console.log(self[data_selector]);
       p_arr.push(x,height - y);
 
       var circ = new Kinetic.Circle({
@@ -287,5 +287,114 @@ $(document).ready(function(){
    window.onresize = function(event) {
         $('.title .wrap').center();
     }
+});
+
+$(document).ready(function ($) {
+    var links = $('.navigation').find('li'),
+      slide = $('.wrap-out'),
+      button = $('.button'),
+      mywindow = $(window),
+      htmlbody = $('html,body'),
+      scrolling = true,
+      currIndex = 1,
+      isMobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+
+    //Setup waypoints plugin
+    slide.waypoint(function (event, direction) {
+      //cache the variable of the data-slide attribute associated with each slide
+    dataslide = $(this).attr('data-slide');
+      currIndex = parseInt(dataslide);
+
+      if (scrolling) {      
+        links.removeClass("active");
+      if (direction === 'down') {
+        $('.navigation li[data-slide="' + dataslide + '"]').addClass("active");
+      } else {
+        $('.navigation li[data-slide="' + dataslide + '"]').prev().addClass("active");
+      }
+      }
+      
+      //GESTISCO LE GIF VISIBILI
+      if (direction == "down") {
+        $("#slide" + (parseInt(dataslide) - 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) - 1) + "_still.gif')");
+        $("#slide" + (parseInt(dataslide) + 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) + 1) + ".gif')");
+      } else {
+        $("#slide" + (parseInt(dataslide) + 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) + 1) + "_still.gif')");
+        $("#slide" + (parseInt(dataslide) - 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) - 1) + ".gif')");        
+      }
+      
+      if ($("#slide" + dataslide).css("backgroundImage") == "url('ui/img/anims/slide" + dataslide + "_still.gif')")
+        $("#slide" + dataslide).css("backgroundImage","url('ui/img/anims/slide" + dataslide + ".gif')");
+  });
+
+    //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class 
+    //from navigation link slide 2 and adds it to navigation link slide 1. 
+    mywindow.scroll(function () {
+        if (mywindow.scrollTop() == 0) {
+          links.removeClass("active");
+          $('.navigation li[data-slide="1"]').addClass('active');
+            currIndex = 1;
+        }
+        
+        if (isMobile) {
+        currIndex = Math.floor(mywindow.scrollTop() / $(".wrap-out").height()) + 1;
+        }
+    });
+
+    //Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
+    //easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
+    function goToByScroll(dataslide) {
+      htmlbody.animate({
+            scrollTop: $('.wrap-out[data-slide="' + dataslide + '"]').offset().top
+      }, 1000, 'easeInOutExpo', function() { //era 600 easeOutQuint
+        currIndex = parseInt(dataslide);
+          scrolling = true;
+        });
+    }
+
+    //When the user clicks on the navigation links, get the data-slide attribute value of the link and pass that variable to the goToByScroll function
+    links.click(function (e) {
+        e.preventDefault();
+        dataslide = $(this).attr('data-slide');
+
+        links.removeClass("active");
+        $(this).addClass("active");
+        
+        scrolling = false;
+        goToByScroll(dataslide);
+    });
+
+    //When the user clicks on the button, get the get the data-slide attribute value of the button and pass that variable to the goToByScroll function
+    button.click(function (e) {
+        e.preventDefault();
+        dataslide = $(this).attr('data-slide');
+        goToByScroll(dataslide);
+
+    });
+    
+  // Keyboard events
+  $(document).on('keydown', function(e){
+    // up/left arrow = scroll up -  || e.keyCode == 38
+    if ((e.keyCode == 37) && currIndex !== 1) {
+      scrolling = false;
+
+      links.removeClass("active");
+      $('.navigation li[data-slide="' + (currIndex - 1) + '"]').addClass("active");
+
+      goToByScroll(currIndex - 1); // RECUPERARE LA SLIDE PRECEDENTE
+    }
+    // down/right arrow, space = scroll down -  || e.keyCode == 40 || e.keyCode == 32
+    if ((e.keyCode == 39) && currIndex != slide.length) {
+      scrolling = false;
+
+      links.removeClass("active");
+      $('.navigation li[data-slide="' + (currIndex + 1) + '"]').addClass("active");
+
+      goToByScroll(currIndex + 1); // RECUPERARE LA SLIDE SUCCESSIVA
+    }
+  });    
+  
+
+    
 });
 

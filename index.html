@@ -9,22 +9,33 @@
 
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/kinetic.min.js"></script>
 
 </head>
 
 <body>
-  <section class="wrap-out title">
-  <section class="wrap">
+	<ul class="navigation">
+		<li data-slide="1" class="active"></li>
+		<li data-slide="2"></li>
+		<li data-slide="3"></li>
+		<li data-slide="4"></li>
+		<li data-slide="5"></li>
+		<li data-slide="6"></li>
+	</ul>
+  <section class="wrap-out title" data-slide="1">
+  <div class="wrap">
 	<h1 class="index">Telephony <br/>In<br/> Nepal</h1>
   <span class="tag">An Infographics</span>
+  </div>
+  <a class="button" data-slide="2" title=""></a>
   </section>
-  </section>
-  <section class="wrap-out milestones">
+  <section class="wrap-out milestones" data-slide="2">
     <h1>Milestones</h1>
-	<iframe src='http://embed.verite.co/timeline/?source=0AqnAeu9bL-T3dE1ueU1ZZDRTd25kVjRlOU5TNmtQTmc&font=Bevan-PotanoSans&maptype=toner&lang=en&height=600' width='100%' height='600' frameborder='0'></iframe>
+	<iframe src='http://embed.verite.co/timeline/?source=0AqnAeu9bL-T3dE1ueU1ZZDRTd25kVjRlOU5TNmtQTmc&font=Bevan-PotanoSans&maptype=toner&lang=en&height=540' width='100%' height='540' frameborder='0'></iframe>
+	<a class="button" data-slide="3" title=""></a>
   </section>
-	<section class="wrap-out operators">
+	<section class="wrap-out operators" data-slide="3">
 		<div class="wrap">
       <h1><span>Service</span> Providers</h1>
       <div class="operators-wrapper">
@@ -114,10 +125,10 @@
 
 		<div class="circle" id="circle"><div></div></div></div>
 			</div>
-
+	<a class="button" data-slide="4" title=""></a>
 	</section>
 
-<section class="wrap-out graphs" >	
+<section class="wrap-out graphs" data-slide="4">	
 	<div class="wrap">
     <h1><span>Penetration</span>Statistics</h1>
 		<div class="legend-group">
@@ -130,10 +141,10 @@
     </div>
 		<div  id="canvas_telecom_glance"></div>
 	</div>
-
+ <a class="button" data-slide="5" title=""></a>
 </section>
 
-<section class="wrap-out policies">
+<section class="wrap-out policies" data-slide="5">
 	<div class="wrap">
     <h1>Policies</h1>
   <div class="policies-wrapper">
@@ -181,12 +192,12 @@
 			<li>International Roaming</li>
 		</ul>
 	</div>
-</div>
 	</div>
-
+	<a class="button" data-slide="6" title=""></a>
+	</div>
 </section>
-<section class="wrap-out punchline">
-  <section class="wrap">
+<section class="wrap-out punchline" data-slide="6">
+  <div class="wrap">
     <div class="punch-line">What Does it mean to<span>Economic Perspective</span>of Nepal?</div>
         <div id="disqus_thread"></div>
        <script type="text/javascript">
@@ -206,7 +217,8 @@
      this.language = "en";
     };
     </script>
-  </section>
+  </div>
+  <a class="button" data-slide="6" title=""></a>
 </section>
 <script src="js/modernizr.custom.js"></script>
 
