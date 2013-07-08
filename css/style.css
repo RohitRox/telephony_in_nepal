@@ -59,7 +59,7 @@ body {
 
 .navigation {
   position: fixed;
-  z-index: 1;
+  z-index: 10000;
   top: 60%;
   right: 0;
   margin-top: -202px;
@@ -79,9 +79,27 @@ body {
 }
 
 .navigation li:hover,.navigation li.active {
-  font-size: 25px;
+/*  font-size: 25px;*/
   cursor: pointer;
   background: transparent !important;
+}
+
+.navigation li span {
+  font-family: 'quicksandbook';
+  color: #fff;
+  margin-left: 40px;
+  text-align: right;
+  display: block;
+  padding-right: 30px;
+  margin-top: -4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+}
+
+.navigation li:hover span {
+  margin-left: -163px;
 }
 
 .button {
@@ -95,6 +113,27 @@ body {
   -webkit-border-radius: 7px 7px 0px 0px;
   border-radius: 7px 7px 0px 0px;
   cursor: pointer;
+  z-index: 10000;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.button span {
+  font-family: 'quicksandbook';  
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  margin: -22px 0 0 -24px;
+  width: 106px;
+  display: none;
+}
+
+.button:hover span {
+  display: block;
 }
 
 .wrap{
@@ -150,13 +189,13 @@ body {
 }
 
 .operators{
-  background: #fff;
-  padding: 20px 0 90px;
+  background: #ddd;
+  padding: 20px 0 130px;
 }
 
 .graphs{
   background: #00b1e1;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .data-green {
@@ -267,17 +306,17 @@ a img {
   height: 560px;
   width: 560px;
   min-height: auto;
-  margin: 0 auto;
+  margin: -60px auto 0;
  /* background: rgb(219, 83, 57);*/
   background: #eee;
   /*border: 6px solid rgb(255, 200, 169);*/
-  border: 4px solid #ddd;
+  border: 4px solid #ccc;
 }
 
 .operators h1 {
   text-align: right;
   font-size: 48px;
-  color: #333;
+  color: #999;
 }
 
 .overview{
