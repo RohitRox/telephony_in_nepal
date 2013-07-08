@@ -255,7 +255,7 @@ a img {
   margin: -90px 0 40px;
   font-family: 'Arial';
   font-weight: bold;
-  font-size: 13px;
+  font-size: 0.85em;
 }
 .legend{
   float: left;
