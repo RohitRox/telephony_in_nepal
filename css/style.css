@@ -245,6 +245,12 @@ a img {
 .legend.data{
   color: #3CBEA0;
 }
+.legend.mobile{
+  color: #9F7D60;
+}
+.legend.mobile .list-box{
+  background: #9F7D60;
+}
 .legend.active, .legend:hover{
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
