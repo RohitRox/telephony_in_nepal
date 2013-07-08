@@ -1,121 +1,108 @@
-
 $(document).ready(function(){
 
- $('.wrap-out').css('min-height', $(window).height()+'px');
+  $('.wrap-out').css('min-height', $(window).height()+'px');
 
-$('.circles').click(function(){
+  $('.circles').click(function(){
 
-	var that = $(this);
-	var id = $(this).attr('id');
+  	var that = $(this);
+  	var id = $(this).attr('id');
 
-	if($('#circle').hasClass(id))
-	{
-		if($('#circle').hasClass('small')) {
+  	if($('#circle').hasClass(id))
+  	{
+  		if($('#circle').hasClass('small')) {
 
-			$('#circle').animate({
-                        'width'     :'340px',
-                        'height'    :'340px',
-                        'top'       :'30px',
-                        'left'      :'30px',
-                        'opacity'   :'1',
-                        'border-radius' : '50%',
-                        'padding' : '80px'
-                       },300,'easeInCirc', function(){
-                       	$('#circle div').fadeIn('slow');
-                       });
+        $('#circle').animate({
+        'width'     :'340px',
+        'height'    :'340px',
+        'top'       :'30px',
+        'left'      :'30px',
+        'opacity'   :'1',
+        'border-radius' : '50%',
+        'padding' : '80px'
+        },300,'easeInCirc', function(){
+        	$('#circle div').fadeIn('slow');
+        });
 
-			$('#circle').removeClass('small').css('text-indent','0px');
-		}
-		else
-		{
-			$('#circle').animate({
-                        'width'     :'32px',
-                        'height'    :'32px',
-                        'top'       :'270px',
-                        'left'      :'270px',
-                        'opacity'   :'0',
-                        'padding'   :'0px'
-                        },300,'easeInCirc');
-			$('#circle div').fadeOut();
-			$('#circle').addClass('small').css('text-indent','-9999px');
-		}
+  			$('#circle').removeClass('small').css('text-indent','0px');
+  		}
+  		else
+  		{
+        $('#circle').animate({
+        'width'     :'32px',
+        'height'    :'32px',
+        'top'       :'270px',
+        'left'      :'270px',
+        'opacity'   :'0',
+        'padding'   :'0px'
+        },300,'easeInCirc');
+  			$('#circle div').fadeOut();
+  			$('#circle').addClass('small').css('text-indent','-9999px');
+  		}
+  	}
+  	else
+  	{
 
-	}
-	else
-	{
+  		$('#circle div').hide();
+  		var abc = $(that).find('.text').html();
+  		$('#circle div').html(abc);
 
-		$('#circle div').hide();
-		var abc = $(that).find('.text').html();
-		$('#circle div').html(abc);
-
-		if($('#circle').hasClass('small')) {
-
-					$('#circle').animate({
-                        'width'     :'340px',
-                        'height'    :'340px',
-                        'top'       :'30px',
-                        'left'      :'30px',
-                        'opacity'   :'1',
-                        'border-radius' : '50%',
-                        'padding' : '80px'
-	                    },300,'easeInCirc', function(){ $('#circle div').fadeIn('slow'); });
-		}
-		else{
-			$('#circle').animate({
-						'width'     :'32px',
-                        'height'    :'32px',
-                        'top'       :'270px',
-                        'left'      :'270px',
-                        'opacity'   :'1',
-                        'padding'   :'0px'
-			}).animate({
-	                        'width'     :'340px',
-	                        'height'    :'340px',
-	                        'top'       :'30px',
-	                        'left'      :'30px',
-	                        'opacity'   :'1',
-	                        'border-radius' : '50%',
-	                        'padding' : '80px'
-	                       },300,'easeInCirc', function(){ $('#circle div').fadeIn('slow'); });
-		}
-		$('#circle').attr('class', id);
-
-	}
+  		if($('#circle').hasClass('small')) {
+        $('#circle').animate({
+        'width'     :'340px',
+        'height'    :'340px',
+        'top'       :'30px',
+        'left'      :'30px',
+        'opacity'   :'1',
+        'border-radius' : '50%',
+        'padding' : '80px'
+        },300,'easeInCirc', function(){ $('#circle div').fadeIn('slow'); });
+  		}
+  		else{
+  			$('#circle').animate({
+          'width'     :'32px',
+          'height'    :'32px',
+          'top'       :'270px',
+          'left'      :'270px',
+          'opacity'   :'1',
+          'padding'   :'0px'
+  			}).animate({
+          'width'     :'340px',
+          'height'    :'340px',
+          'top'       :'30px',
+          'left'      :'30px',
+          'opacity'   :'1',
+          'border-radius' : '50%',
+          'padding' : '80px'
+          },300,'easeInCirc', function(){ $('#circle div').fadeIn('slow'); });
+  		}
+  		$('#circle').attr('class', id);
+  	}
+  });
 
 
-});
-
-
-$('.circles').click(function(){
- $('#circle span').click(function(){
-    $('#circle').animate({
-                        'width'     :'32px',
-                        'height'    :'32px',
-                        'top'       :'270px',
-                        'left'      :'270px',
-                        'opacity'   :'0',
-                        'padding'   :'0px'
-                        },300,'easeOutCirc');
-            $('#circle div').fadeOut('fast');
-            $('#circle').addClass('small').css('text-indent','-9999px');
- });
-});
-
-
-});
-
-$(document).ready(function(){
+  $('.circles').click(function(){
+    $('#circle span').click(function(){
+      $('#circle').animate({
+      'width'     :'32px',
+      'height'    :'32px',
+      'top'       :'270px',
+      'left'      :'270px',
+      'opacity'   :'0',
+      'padding'   :'0px'
+      },300,'easeOutCirc');
+      $('#circle div').fadeOut('fast');
+      $('#circle').addClass('small').css('text-indent','-9999px');
+    });
+  });
 
   setTimeout(function(){
     $(".year1").fadeIn('slow');
     $(".percent1").fadeIn('slow');
   },2000);
 
-
 });
 
-
-  var data = [
+  var data_arr = [
   {date: "14 June, 2010", tele_penetration: 30.24, internet_penetration: 4.56, mobile_penetration: 25.75},
   {date: "15 December, 2010", tele_penetration: 36.37, internet_penetration: 10.02, mobile_penetration: 31.56 },
   {date: "15 June, 2011", tele_penetration: 44.9, internet_penetration: 10.28, mobile_penetration: 39.53},
@@ -125,7 +112,7 @@ $(document).ready(function(){
   {date: "14 April , 2013", tele_penetration: 75.46, internet_penetration: 25.67, mobile_penetration: 66.96 }
   ];
   var width = 920, height = 420;
-  var gap = Math.round((width/data.length));
+  var gap = Math.round((width/data_arr.length));
 
   function stage_init(){
 
@@ -165,7 +152,7 @@ $(document).ready(function(){
 	function telecom_at_glance_init(data_selector, color_pref){
 
     var layer = new Kinetic.Layer();
-    var len = data.length, k =0,x = 0;
+    var len = data_arr.length, k =0,x = 0;
     window.p_arr = [];
 
     window.handle = setInterval(function(){
@@ -176,7 +163,7 @@ $(document).ready(function(){
           return false;
         }
       x = x + gap;
-      var self = data[k];
+      var self = data_arr[k];
       var y = Math.round(((self[data_selector]/100)*height));
 
       // console.log(self[data_selector]);
@@ -374,9 +361,5 @@ $(document).ready(function ($) {
         goToByScroll(dataslide);
 
     });
-
- 
-
-
 });
 

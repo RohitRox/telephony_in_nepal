@@ -1,48 +1,106 @@
-[
-{date: 1913, milestone : "Establishment of first telephone lines in Kathmandu"},
-{date: 1914, milestone : "Establishment of Open wire Trunk Link from Kathmandu to Raxaul (India)"},
-{date: 1935, milestone : "Installation of 25 lines automatic exchange in Royal Palace"},
-{date: 1955, milestone : "Distribution of telephone line to general public"},
-{date: 1962, milestone : "First Public Telephone Exchange in Kathmandu (300 lines CB)"},
-{date: 1964, milestone : "Beginning of International Telecommunications Service (HF Radio) to India and Pakistan"},
-{date: 1965, milestone : "First Automatic exchange in Nepal (1000 lines in Kathmandu)"},
-{date: 1983, milestone : "Establishment of digital Telephone Exchange"},
-{date: 1984, milestone : "Commencement of STD service"},
-{date: 1995, milestone : "Installation of Optical Fiber Network"},
-{date: 1996, milestone : "Conversion of all Transmission link to Digital transmission link"},
-{date: 1996, milestone : "Automation of the entire Telephone Network"},
-{date: 1996, milestone : "Independent Int. Gateway Exchange established."},
-{date: 1996, milestone : "Introduction of VSAT services.(Nepal Telecom)"},
-{date: 1997, milestone : "Digital Link with D.O.T. India through Optical Fiber in Birgunj - Raxual.(Nepal Telecom)"},
-{date: 1999, milestone : "Launching of GSM Mobile services.(Nepal Telecom)"},
-{date: 2000, milestone : "Implementation of SDH Microwave Radio.(Nepal Telecom)"},
-{date: 2000, milestone : "Launching of Internet Service.(Nepal Telecom)"},
-{date: 2002, milestone : "UTL got license for CDMA WLL and Limited mobility."},
-{date: 2002, milestone : "East West Highway Optical Fiber Project.(Nepal Telecom)"},
-{date: 2003, milestone : "STM Telecom sanchar licensed for rural Telephony."},
-{date: 2003, milestone : "GSM Prepaid Service.(Nepal Telecom)"},
-{date: 2004, milestone : "NEPAL TELECOM(Transformation from Corporation to a Company)"},
-{date: 2004, milestone : "Pre-paid Calling Card Service (IN Services).(Nepal Telecom)"},
-{date: 2005, milestone : "Mero MObile GSM Service launched (Ncell)"},
-{date: 2005, milestone : "Soft launch of CDMA.(Nepal Telecom)"},
-{date: 2005, milestone : "Access Network Services.(Nepal Telecom)"},
-{date: 2006, milestone : "CDMA Limited Servies in Kathmandu Valley.(Nepal Telecom)"},
-{date: 2007, milestone : "National Roaming for CDMA Mobile (Sky Phone) started.(Nepal Telecom)"},
-{date: 2007, milestone : "Expansion of Internet Bandwidth via Optical link between Nepal & India.(Nepal Telecom)"},
-{date: 2007, milestone : "GPRS, 3G and CRBT Services introduced in GSM Mobile.(Nepal Telecom)"},
-{date: 2008, milestone : "Teliasonera Aquired Ncell, then Spice Nepal (Ncell)"},
-{date: 2008, milestone : "Nepal Satellite TeleCommunications awarded license for GSM rural telephony in MWDR."},
-{date: 2008, milestone : "Broadband ADSL Service launched.(Nepal Telecom)"},
-{date: 2008, milestone : "Smart Tel awarded license for GSM rural telephony for 4 Development region other than EDR."},
-{date: 2009, milestone : "Postpaid CDMA Mobile Service started (Nepal Telecom)"},
-{date: 2010, milestone : "Mero Mobile Rebranded to Ncell."},
-{date: 2010, milestone : "Blackberry Service launched in Ncell."},
-{date: 2010, milestone : "EVDO Service started (Nepal Telecom)"},
-{date: 2010, milestone : "High Speed data Card launched from Ncell. Ncell Connect."},
-{date: 2010, milestone : "Soft Launch of EasyPhone IP Call Service (Nepal Telecom)"},
-{date: 2010, milestone : "High Speed Internet on the Top of the world (Ncell)"},
-{date: 2010, milestone : "Launching of EasyPhone SIP EasyCall Service (Nepal Telecom)"},
-{date: 2011, milestone : "Launching of EasyPhone SIP PPP Service (Nepal Telecom)"},
-{date: 2011, milestone : "Launching of GSM 3G Data Only Service (Nepal Telecom)"},
-{date: 2013, milestone : "NTC introduces Wimax"},
-]
+
+{
+    "timeline":
+    {
+        "headline":"Telephony Milestones",
+        "type":"default",
+        "startDate":"1/1/1913",
+        "text":"<i><span class='c1'>First Telephone Lines</span> To <span class='c2'>WIMAX</span></i>",
+        "asset":
+        {
+            "media":"/images/world-technology-background.jpg"
+        },
+        "date": [
+            {
+                "startDate":"1/1/1913",
+                "headline":"First Telephone Lines",
+                "text":"The first telephone lines were established in Kathmandu in 1913, followed by establishment of Open wire Trunk Link from Kathmandu to Raxaul (India) in 1914",
+                "asset":
+                {
+                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                }
+            },
+            {
+                "startDate":"1/1/1935",
+                "headline":"Telephone Lines distributed to public ",
+                "text":"25 lines automatic exchange in Royal Palace in 1935, however, telephone lines were open to public only in 1955",
+                "asset":
+                {
+                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                }
+            },
+            {
+                "startDate":"1/1/1975",
+                "headline":"Birth of Nepal Telecommunication Corporation",
+                "text":"Known as Telecommunication Department at the time of establishment, its name was changed Telecommunications Development Board in 1969. After the enactment of Communications Corporation Act 1971, it was formally established as fully state-owned corporation called Nepal Telecommunication Corporation in 1975",
+                "asset":
+                {
+                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                }
+            },
+            {
+                "startDate":"1/1/1983",
+                "headline":"Digital Telephony",
+                "text":"Major milestones in the 80s were establishment of digital Telephone Exchange and Commencement of STD service.",
+                "asset":
+                {
+                    "media":"/timeline/assets/img/shots/pet___you.jpg  "
+                }
+            },
+            {
+                "startDate":"1/1/1995",
+                "headline":"Optical Fiber",
+                "text":"Installation of Optical Fiber Network.",
+                "asset":
+                {
+                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                }
+            },
+            {
+                "startDate":"1/1/1996",
+                "headline":"VSAT and Automation",
+                "text":"The year 1996 saw a lot of major achievements in Telecom Industry of Nepal. VSAT services were introducted and Independent Int. Gateway Exchange was established.In the same year automation of the entire Telephone Network and Conversion of all Transmission link to Digital transmission link was done.",
+                "asset":
+                {
+                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                }
+            },
+            {
+                "startDate":"1/1/1999",
+                "headline":"GSM Arrives",
+                "text":"End of 90s, in 1999, Nepal Telecom finally launches GSM Mobile service",
+                "asset":
+                {
+                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                }
+            },
+            {
+                "startDate":"1/1/2002",
+                "headline":"UTL",
+                "text":"UTL got license for CDMA WLL and Limited mobility.",
+                "asset":
+                {
+                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                }
+            },
+            {
+                "startDate":"1/1/2003",
+                "headline":"GSM Prepaid and Smart Telecom",
+                "text":"Nepal Telecom introduces GSM Prepaid Service and in the same year STM Telecom sanchar licensed for rural Telephony",
+                "asset":
+                {
+                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                }
+            },
+            {
+                "startDate":"1/1/2004",
+                "headline":"Corporation to a Company",
+                "text":"The Nepal Telecom Corporation was transformed to Nepal Doorsanchar Company Limited and in the same year Pre-paid Calling Card Service was introduced.",
+                "asset":
+                {
+                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                }
+            }
+        ]
+    }
+}

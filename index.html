@@ -32,10 +32,7 @@
   <a class="button" data-slide="2" title=""><span>Scroll Down</span></a>
   </section>
   <section class="wrap-out milestones" data-slide="2">
-    <h1>Milestones</h1>
-    <div id="timeline">
-	<!-- <iframe src='http://embed.verite.co/timeline/?source=0AqnAeu9bL-T3dE1ueU1ZZDRTd25kVjRlOU5TNmtQTmc&font=Bevan-PotanoSans&maptype=toner&lang=en&height=540' width='100%' height='540' frameborder='0'></iframe> -->
-	</div>
+	   <iframe src='/timeline/index.html' width='100%' height='600' frameborder='0'></iframe>
 	<a class="button" data-slide="3" title=""><span>Scroll Down</span></a>
   </section>
 	<section class="wrap-out operators" data-slide="3">
@@ -207,7 +204,10 @@
     <div class="punch-line">What Does it mean to<span>Economic Perspective</span>of Nepal?</div>
         <div id="disqus_thread"></div>
        <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+       if( window.location.hostname != "localhost")
+       {
+        /* * * CONFIGURATION VARIABLES:
+         EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'tele'; // required: replace example with your forum shortname
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
@@ -216,6 +216,7 @@
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
+      }
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <script type="text/javascript">
@@ -229,27 +230,6 @@
 <script src="js/modernizr.custom.js"></script>
 
 <script src="js/script.js"></script>
-
-<script type="text/javascript">
-/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-var disqus_shortname = ''; // required: replace example with your forum shortname
-
-/* * * DON'T EDIT BELOW THIS LINE * * */
-(function () {
-    var s = document.createElement('script'); s.async = true;
-    s.type = 'text/javascript';
-    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-
-$(function(){
-  
-  var timeline = new VMM.Timeline();
-  timeline.init("milestones.json");
-
-});
-
-</script>
 
 </body>
 </html>
