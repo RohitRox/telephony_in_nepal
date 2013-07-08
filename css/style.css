@@ -2,6 +2,17 @@
 /* CSS Document */
 
 @font-face {
+      font-family: 'bebas';
+      src: url('../fonts/bebas___-webfont.eot');
+      src: url('../fonts/bebas___-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/bebas___-webfont.woff') format('woff'),
+           url('../fonts/bebas___-webfont.ttf') format('truetype'),
+           url('../fonts/bebas___-webfont.svg#bebas') format('svg');
+      font-weight: normal;
+      font-style: normal;
+}
+
+@font-face {
     font-family: 'quicksandbook';
     src: url('../fonts/quicksand_book-webfont.eot');
     src: url('../fonts/quicksand_book-webfont.eot?#iefix') format('embedded-opentype'),
@@ -19,7 +30,7 @@ h1,h2,h3,h4,h5,h6 {
   margin:10px 0;
 }
 h1 {
-  font-family: Sans-Serif;
+  font-family: 'bebas';
   font-size:38px;
   padding: 15px;
   margin-bottom: 40px;
@@ -48,27 +59,57 @@ body {
   margin: 0 auto;
 }
 .wrap-out{
-  width: 90%;
+  width: 100%;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   height: auto;
   display: block;
-  padding: 2% 5%;
 }
+
+.wrap h1 {
+  margin-top: 40px;
+}
+
+/*title*/
+
+.title {
+  background: #ffcc66;
+  text-align: center;
+  color: #fff;
+}
+
+.wrap h1.index{
+  font-size: 75px; 
+  margin-top: 60px;
+}
+
+.tag {
+  font-size: 38px;
+  font-family: 'quicksandbook';
+  text-transform: uppercase;
+}
+
+.milestones h1 {
+  font-size: 48px;
+  color: #555;
+  text-align: left;
+  width: 960px;
+  margin: 0 auto;
+}
+
 .timeline{
   padding-bottom: 40px;
 }
-h1.index{
-  background: #1863A9;
-}
+
 .operators{
-  background: #ddd;
-  padding-bottom: 70px;
+  background: #e2674a;
+  padding: 20px 0 70px;
 }
 .graphs{
-  background: #18CDE8;
+  background: #00b1e1;
+  padding-bottom: 50px;
 }
 .policies{
   background: #0BC033;
@@ -90,6 +131,21 @@ a img {
 
 /* graphs */
 
+.wrap h1 {
+  font-size: 48px;
+ text-transform: uppercase;
+}
+
+.wrap h1 span {
+  font-size: 23px;
+  font-family: 'bebas';
+  display: block;
+}
+
+.graphs .wrap h1 {
+  text-align: left;
+}
+
 #canvas_telecom_glance canvas{
   left: 0;
 }
@@ -98,7 +154,10 @@ a img {
   float: right;
   background: #fff;
   border-radius: 6px;
-  margin-bottom: 8px;
+  margin: -50px 0 40px;
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 13px;
 }
 .legend{
   float: left;
@@ -116,10 +175,10 @@ a img {
   margin-top: 1px;
 }
 .legend.tele .list-box{
-  background: #FB5352;
+  background: #00b1e1;
 }
 .legend.tele{
-  color: #FB5352;
+  color: #00b1e1;
 }
 .legend.data .list-box{
   background: #3CBEA0;
@@ -130,12 +189,141 @@ a img {
 .legend.active, .legend:hover{
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1
+  opacity: 1;
 }
+
+/*.graph {
+  background: url(../images/graph-line.png) no-repeat 0 0;
+  height: 563px;
+  width: 831px;
+  margin-left: 196px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.container h3 {
+  font-family: 'bebas';
+  font-size: 54px;
+  color: #fff;
+  font-weight: normal;
+  padding: 40px 0 70px;
+  letter-spacing: 1px;
+}
+
+.circle1 {
+  background: url(../images/sprite.png) no-repeat -458px -16px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 335px;
+  cursor: pointer;
+  top: -13px;
+}
+
+
+.year1 {
+  background: url(../images/sprite.png) no-repeat -357px -15px;
+  width: 94px;
+  height: 39px;
+  position: absolute;
+  left: 231px;
+  top: -17px;
+  display: none;
+}
+
+.percent1 {
+  background: url(../images/sprite.png) no-repeat -456px 0px;
+  width: 376px;
+  height: 108px;
+  position: absolute;
+  left: 333px;
+  top: -29px;
+  display: none;
+}
+
+.year2 {
+  background: url(../images/sprite.png) no-repeat -277px -247px;
+  top: 208px;
+  left: 150px;
+  height: 44px;
+  width: 104px;
+}
+
+.percent2 {
+  background: url(../images/sprite.png) no-repeat -381px -232px;
+  width: 376px;
+  height: 108px;
+  position: absolute;
+  left: 259px;
+  top: 196px;
+}
+
+.circle2 {
+  background: url(../images/sprite.png) no-repeat -458px -16px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 258px;
+  top: 216px;
+}
+
+
+.year3 {
+  background: url(../images/sprite.png) no-repeat -128px -421px;
+  top: 370px;
+  left: 12px;
+  height: 44px;
+  width: 104px;
+}
+
+.percent3 {
+  background: url(../images/sprite.png) no-repeat -231px -406px;
+  width: 376px;
+  height: 108px;
+  position: absolute;
+  left: 119px;
+  top: 356px;
+}
+
+.circle3 {
+  background: url(../images/sprite.png) no-repeat -458px -16px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 120px;
+  top: 376px;
+}
+
+.year4{
+  background: url(../images/sprite.png) no-repeat 3px -576px;
+  top: 530px;
+  left: -118px;
+  height: 44px;
+  width: 104px;
+}
+
+.percent4 {
+  background: url(../images/sprite.png) no-repeat 3px -576px;
+  width: 376px;
+  height: 108px;
+  position: absolute;
+  left: -117px;
+  top: 531px;
+}
+
+.circle4 {
+  background: url(../images/sprite.png) no-repeat -458px -16px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -13px;
+  top: 535px;
+}
+*/
 
 /*operators*/
 
-.operators .wrap {
+.operators-wrapper {
   position: relative;
   border-radius: 50%;
   background: #fff;
@@ -143,6 +331,12 @@ a img {
   width: 560px;
   min-height: auto;
   border: 1px solid #bbb;
+  margin: 0 auto;
+}
+
+.operators h1 {
+  text-align: right;
+  font-size: 48px;
 }
 .overview{
   font-size: 1em;
@@ -290,6 +484,11 @@ a img {
   background: #3d3d3d;
 }
 
+.policies-wrapper {
+  padding-top: 40px;
+  overflow: hidden;
+}
+
 .policies-block {
   background: #2d2d2d;
   width: 190px;
@@ -322,4 +521,24 @@ a img {
   font: 16px/20px 'quicksandbook';
   padding: 13px 0;
   text-align: center;
+}
+
+/*punchline*/
+
+.punchline {
+  text-align: center;
+}
+
+.punch-line {
+  font-family: 'bebas';
+  font-size: 84px;
+  color: #2d2d2d;
+  margin: 100px 0;
+}
+
+.punch-line span {
+  display: block;
+  font-size: 38px;
+  font-family: 'quicksandbook';
+  color: #3d3d3d;
 }
