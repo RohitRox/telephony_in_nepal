@@ -1,6 +1,8 @@
 
 $(document).ready(function(){
 
+ $('.wrap-out').css('min-height', $(window).height()+'px');
+
 $('.circles').click(function(){
 
 	var that = $(this);
@@ -122,7 +124,7 @@ $(document).ready(function(){
   {date: "15 December, 2012", tele_penetration: 70.61, internet_penetration: 22.22},
   {date: "14 May , 2013", tele_penetration: 77.11, internet_penetration: 25.67}
   ];
-  var width = 920, height = 400;
+  var width = 920, height = 420;
   var gap = Math.round((width/data.length));
 
   function stage_init(){
@@ -202,8 +204,8 @@ $(document).ready(function(){
         y:height-y-69,
         text: self[data_selector]+"%" ,
         fontFamily: 'quicksandbook',
-        fill: '#00b1e1',
-        stroke: '#00b1e1',
+        fill: color_pref,
+        stroke: color_pref,
         strokeWidth: 1,
         fontSize: '20',
         fontWeight: 'bold',
@@ -237,10 +239,11 @@ $(document).ready(function(){
     return layer;
 
   }
+
   var tele_layer = null, internet_layer = null;
   setTimeout(function(){
   	stage_init();
-    tele_layer = telecom_at_glance_init("tele_penetration","FB5352");
+    tele_layer = telecom_at_glance_init("tele_penetration","#00b1e1");
   },2000);
 
   $('.legend').click(function(){
@@ -261,4 +264,28 @@ $(document).ready(function(){
         internet_layer.show();
     }
   });
+
+   $('.tele').click(function(){
+    $('.graphs').removeClass('data-green');
+    $(this).parent('.legend-group').parent('.wrap').parent('.graphs').addClass('data-blue');
+  });
+
+  $('.data').click(function(){
+    $('.graphs').removeClass('data-blue');
+    $(this).parent('.legend-group').parent('.wrap').parent('.graphs').addClass('data-green');
+  });
+
+jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", (($(window).height() - this.outerHeight()) / 2) + $(window).scrollTop() + "px");
+    this.css("left", (($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft() + "px");
+    return this;
+}
+
+$(document).ready(function(){
+   $('.title .wrap').center();
+   window.onresize = function(event) {
+        $('.title .wrap').center();
+    }
+});
 
