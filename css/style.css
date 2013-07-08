@@ -511,6 +511,10 @@ a img {
   vertical-align: middle;
 }
 
+.policies h1 {
+  text-align: right;
+}
+
 .policies-block ul {
   padding: 0 35px;
 }
