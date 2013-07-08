@@ -11,6 +11,7 @@
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/kinetic.min.js"></script>
+	<script type="text/javascript" src="js/timeline-min.js"></script>
 
 </head>
 
@@ -32,7 +33,9 @@
   </section>
   <section class="wrap-out milestones" data-slide="2">
     <h1>Milestones</h1>
-	<iframe src='http://embed.verite.co/timeline/?source=0AqnAeu9bL-T3dE1ueU1ZZDRTd25kVjRlOU5TNmtQTmc&font=Bevan-PotanoSans&maptype=toner&lang=en&height=540' width='100%' height='540' frameborder='0'></iframe>
+    <div id="timeline">
+	<!-- <iframe src='http://embed.verite.co/timeline/?source=0AqnAeu9bL-T3dE1ueU1ZZDRTd25kVjRlOU5TNmtQTmc&font=Bevan-PotanoSans&maptype=toner&lang=en&height=540' width='100%' height='540' frameborder='0'></iframe> -->
+	</div>
 	<a class="button" data-slide="3" title=""></a>
   </section>
 	<section class="wrap-out operators" data-slide="3">
@@ -238,6 +241,14 @@ var disqus_shortname = ''; // required: replace example with your forum shortnam
     s.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
+
+$(function(){
+  
+  var timeline = new VMM.Timeline();
+  timeline.init("milestones.json");
+
+});
+
 </script>
 
 </body>
