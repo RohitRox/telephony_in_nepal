@@ -1,6 +1,6 @@
 $(function(){
 
 	var timeline = new VMM.Timeline();
-	timeline.init("/json/milestones.json");
+	timeline.init("../json/milestones.json");
 
 });

@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
+  // giving section full height of the browser
+
   $('.wrap-out').css('min-height', $(window).height()+'px');
+
+  // operators pop up animation
 
   $('.circles').click(function(){
 
@@ -94,13 +98,9 @@ $(document).ready(function(){
       $('#circle').addClass('small').css('text-indent','-9999px');
     });
   });
+  });
 
-  setTimeout(function(){
-    $(".year1").fadeIn('slow');
-    $(".percent1").fadeIn('slow');
-  },2000);
-
-});
+  // graphs js
 
   var data_arr = [
   {date: "14 June, 2010", tele_penetration: 30.24, internet_penetration: 4.56, mobile_penetration: 25.75},
@@ -265,19 +265,7 @@ $(document).ready(function(){
     $('section.graphs').css({background: _this.data("color")});
   });
 
-// jQuery.fn.center = function () {
-//     this.css("position","absolute");
-//     this.css("top", (($(window).height() - this.outerHeight()) / 2) + $(window).scrollTop() + "px");
-//     this.css("left", (($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft() + "px");
-//     return this;
-// }
-
-// $(document).ready(function(){
-//    $('.title .wrap').center();
-//    window.onresize = function(event) {
-//         $('.title .wrap').center();
-//     }
-// });
+// scroll navigation and scroll down button
 
 $(document).ready(function ($) {
     var links = $('.navigation').find('li'),
