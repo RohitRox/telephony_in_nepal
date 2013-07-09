@@ -79,7 +79,7 @@ section, footer, header{
 	left:0;
 	top:-40px;
 	background:repeat-x;
-	
+
 	background-image: linear-gradient(bottom, #434446 0%, #363839 100%);
 	background-image: -o-linear-gradient(bottom, #434446 0%, #363839 100%);
 	background-image: -moz-linear-gradient(bottom, #434446 0%, #363839 100%);
@@ -93,7 +93,7 @@ section, footer, header{
 #timeline div.timenav-background{
 	background-color:#222 !important;
  	background-color:rgba(0,0,0,0.4) !important;
- 	
+
 }
 
 #timeline .navigation .timenav-background .timenav-interval-background{
@@ -215,7 +215,7 @@ section, footer, header{
 	border-radius: 50%;
 	max-height: 400px!important;
 	height: 360px;
-	border: 10px dotted #fff;
+	border: 3px dotted rgba(222,222,222,.8);
 	width: 360px;
 	padding: 10px;
 }

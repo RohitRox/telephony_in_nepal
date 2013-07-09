@@ -61,7 +61,7 @@ $(document).ready(function(){
       radius: radius,
       startAngle: startAngle*0.0174532925,
       endAngle: endAngle*0.0174532925,
-      strokeWidth: 5
+      strokeWidth: 9
       });
 
     arc.on('mousemove', function() {
@@ -76,7 +76,7 @@ $(document).ready(function(){
         x: x,
         y: y,
         radius: radius,
-        stroke: 'rgba(255, 255, 255,1)',
+        stroke: 'rgba(255, 255, 255,.2)',
         strokeWidth: 7
       });
 

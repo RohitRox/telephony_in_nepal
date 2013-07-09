@@ -443,3 +443,11 @@ a img {
   display: block;
   line-height: 110px;
 }
+.data_sources h3{
+  margin-bottom: 0;
+}
+.data_sources ul{
+  list-style: none;
+  line-height: 1.6em;
+  margin: 0;
+}
