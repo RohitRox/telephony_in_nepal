@@ -202,10 +202,6 @@ a img {
   padding: 30px 0;
 }
 
-.milestones iframe {
-  min-height: 100%;
-}
-
 .timeline{
   padding-bottom: 40px;
 }
@@ -219,7 +215,6 @@ a img {
 
 .graphs{
   background: #00b1e1;
-  padding-bottom: 20px;
 }
 
 .wrap h1 {

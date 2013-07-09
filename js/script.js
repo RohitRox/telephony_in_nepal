@@ -3,6 +3,7 @@ $(document).ready(function(){
   // giving section full height of the browser
 
   $('.wrap-out').css('min-height', $(window).height()+'px');
+  $('.milestones iframe').css('min-height', $(window).height()+'px');
 
   // operators pop up animation
 
