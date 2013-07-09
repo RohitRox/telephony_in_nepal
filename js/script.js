@@ -5,101 +5,115 @@ $(document).ready(function(){
   $('.wrap-out').css('min-height', $(window).height()+'px');
   $('.milestones iframe').css('min-height', $(window).height()+'px');
 
-  // operators pop up animation
+});
+  // operators circular charts
 
-  $('.circles').click(function(){
+  function rand(){ return Math.floor((Math.random()*(360-0))+0); }
 
-  	var that = $(this);
-  	var id = $(this).attr('id');
+  function value_to_angle(value){
+    return (360/100)*parseFloat(value);
+  }
 
-  	if($('#circle').hasClass(id))
-  	{
-  		if($('#circle').hasClass('small')) {
-
-        $('#circle').animate({
-        'width'     :'340px',
-        'height'    :'340px',
-        'top'       :'30px',
-        'left'      :'30px',
-        'opacity'   :'1',
-        'border-radius' : '50%',
-        'padding' : '80px'
-        },300,'easeInCirc', function(){
-        	$('#circle div').fadeIn('slow');
-        });
-
-  			$('#circle').removeClass('small').css('text-indent','0px');
-  		}
-  		else
-  		{
-        $('#circle').animate({
-        'width'     :'32px',
-        'height'    :'32px',
-        'top'       :'270px',
-        'left'      :'270px',
-        'opacity'   :'0',
-        'padding'   :'0px'
-        },300,'easeInCirc');
-  			$('#circle div').fadeOut();
-  			$('#circle').addClass('small').css('text-indent','-9999px');
-  		}
-  	}
-  	else
-  	{
-
-  		$('#circle div').hide();
-  		var abc = $(that).find('.text').html();
-  		$('#circle div').html(abc);
-
-  		if($('#circle').hasClass('small')) {
-        $('#circle').animate({
-        'width'     :'340px',
-        'height'    :'340px',
-        'top'       :'30px',
-        'left'      :'30px',
-        'opacity'   :'1',
-        'border-radius' : '50%',
-        'padding' : '80px'
-        },300,'easeInCirc', function(){ $('#circle div').fadeIn('slow'); });
-  		}
-  		else{
-  			$('#circle').animate({
-          'width'     :'32px',
-          'height'    :'32px',
-          'top'       :'270px',
-          'left'      :'270px',
-          'opacity'   :'1',
-          'padding'   :'0px'
-  			}).animate({
-          'width'     :'340px',
-          'height'    :'340px',
-          'top'       :'30px',
-          'left'      :'30px',
-          'opacity'   :'1',
-          'border-radius' : '50%',
-          'padding' : '80px'
-          },300,'easeInCirc', function(){ $('#circle div').fadeIn('slow'); });
-  		}
-  		$('#circle').attr('class', id);
-  	}
-  });
-
-
-  $('.circles').click(function(){
-    $('#circle span').click(function(){
-      $('#circle').animate({
-      'width'     :'32px',
-      'height'    :'32px',
-      'top'       :'270px',
-      'left'      :'270px',
-      'opacity'   :'0',
-      'padding'   :'0px'
-      },300,'easeOutCirc');
-      $('#circle div').fadeOut('fast');
-      $('#circle').addClass('small').css('text-indent','-9999px');
+  function circular_chart_init(el, data_array, title){
+    var stage = new Kinetic.Stage({
+      container: el,
+      width: 225,
+      height: 250,
+      fill: "def"
     });
-  });
-  });
+
+    var x = 122, y = 125;
+
+    var layer = new Kinetic.Layer();
+
+    var title = new Kinetic.Text({
+        x:x-80,
+        y:225,
+        text: title,
+        fontFamily: 'quicksandbook',
+        fill: "#fff",
+        stroke: "#fff",
+        strokeWidth: 1,
+        fontSize: '12'
+    });
+    layer.add(title);
+
+    var radius = 40;
+    var startAngle = 0;
+
+    for(var i = 0; i < data_array.length; i++){
+
+    var data_value = data_array[i].value;
+
+    $('#legends').append('<div><span style="background: '+"rgba(255,255,255,.8)"+';"></span>'+data_array[i].data+'</div>');
+
+    var endAngle = startAngle + value_to_angle(data_value);
+
+    var arc = new Kinetic.Shape({
+      drawFunc: function(canvas) {
+          var context = canvas.getContext('2d');
+          context.beginPath();
+          context.arc(x, y, this.getAttrs().radius, this.getAttrs().startAngle, this.getAttrs().endAngle, false);
+          canvas.stroke(this);
+      },
+      fill: data_array[i].color,
+      stroke: data_array[i].color,
+      radius: radius,
+      startAngle: startAngle*0.0174532925,
+      endAngle: endAngle*0.0174532925,
+      strokeWidth: 5
+      });
+
+    arc.on('mousemove', function() {
+
+
+
+    });
+
+    startAngle = endAngle;
+
+    var circle_outer = new Kinetic.Circle({
+        x: x,
+        y: y,
+        radius: radius,
+        stroke: 'rgba(13, 100, 117,.8)',
+        strokeWidth: 8
+      });
+
+    layer.add(circle_outer);
+    layer.add(arc);
+
+    radius += 10;
+    }
+
+    stage.add(layer);
+  }
+
+
+  var telephone_penetration_data = [
+  {data: "Mobile(GSM, CDMA)", color: "#F45649", value: 68.45},
+  {data: "Fixed(Pstn, WLL)", color: "#65A556", value: 5.52},
+  {data: "Others (LM, GMPCS)", color: "#FE9F8B", value: 3.14}
+  ];
+
+  var telephony_market_share = [
+  {data: "NCell", color: "#F45649", value: 49},
+  {data: "NTC", color: "#65A556", value: 43},
+  {data: "UTL", color: "#FE9F8B", value: 4},
+  {data: "STPL", color: "#2A9BA4", value: 3},
+  {data: "NSTPL", color: "#DEC628", value: 1}
+  ];
+
+  var internet_market_share =[
+  {data: "NCell", color: "#F45649", value: 52},
+  {data: "NTC", color: "#65A556", value: 46},
+  {data: "UTL", color: "#FE9F8B", value: 1},
+  {data: "STPL", color: "#2A9BA4", value: 1}
+  ];
+
+  circular_chart_init("tele_penetration",telephone_penetration_data,"TELEPHONE PENETRATION");
+  circular_chart_init("tele_market_share",telephony_market_share,"TELEPHONE MARKET SHARE");
+  circular_chart_init("internet_share",internet_market_share,"INTERNET MARKET SHARE");
 
   // graphs js
 
