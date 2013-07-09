@@ -245,7 +245,7 @@ $(document).ready(function(){
   var tele_layer = null, internet_layer = null, mobile_layer = null;
   setTimeout(function(){
   	stage_init();
-    tele_layer = telecom_at_glance_init("tele_penetration","#00b1e1");
+    tele_layer = telecom_at_glance_init("tele_penetration","rgb(247, 117, 92)");
   },2000);
 
   $('.legend').click(function(){
