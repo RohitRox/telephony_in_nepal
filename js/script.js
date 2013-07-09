@@ -17,8 +17,8 @@ $(document).ready(function(){
   function circular_chart_init(el, data_array, title){
     var stage = new Kinetic.Stage({
       container: el,
-      width: 225,
-      height: 250,
+      width: 280,
+      height: 300,
       fill: "def"
     });
 
@@ -28,7 +28,7 @@ $(document).ready(function(){
 
     var title = new Kinetic.Text({
         x:x-80,
-        y:225,
+        y:270,
         text: title,
         fontFamily: 'quicksandbook',
         fill: "#fff",
@@ -76,14 +76,14 @@ $(document).ready(function(){
         x: x,
         y: y,
         radius: radius,
-        stroke: 'rgba(13, 100, 117,.8)',
-        strokeWidth: 8
+        stroke: 'rgba(255, 255, 255,1)',
+        strokeWidth: 7
       });
 
     layer.add(circle_outer);
     layer.add(arc);
 
-    radius += 10;
+    radius += 18;
     }
 
     stage.add(layer);
@@ -245,7 +245,7 @@ $(document).ready(function(){
   var tele_layer = null, internet_layer = null, mobile_layer = null;
   setTimeout(function(){
   	stage_init();
-    tele_layer = telecom_at_glance_init("tele_penetration","rgb(247, 117, 92)");
+    tele_layer = telecom_at_glance_init("tele_penetration","#e2674a");
   },2000);
 
   $('.legend').click(function(){
