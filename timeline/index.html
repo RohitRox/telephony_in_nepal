@@ -26,7 +26,14 @@
         <!-- JavaScript includes - jQuery, turn.js and our own script.js -->
 		<script src="../js/jquery-1.7.2.min.js"></script>
 		<script src="assets/js/timeline-min.js"></script>
-		<script src="assets/js/script.js"></script>
+		<script type="text/javascript">
+            $(function(){
+
+                var timeline = new VMM.Timeline();
+                timeline.init("../json/milestones.json");
+
+            });
+        </script>
 
     </body>
 </html>
