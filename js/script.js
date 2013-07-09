@@ -28,7 +28,7 @@ $(document).ready(function(){
 
     var title = new Kinetic.Text({
         x:x-80,
-        y:270,
+        y:255,
         text: title,
         fontFamily: 'quicksandbook',
         fill: "#fff",
@@ -36,6 +36,7 @@ $(document).ready(function(){
         strokeWidth: 1,
         fontSize: '12'
     });
+
     layer.add(title);
 
     var radius = 40;
