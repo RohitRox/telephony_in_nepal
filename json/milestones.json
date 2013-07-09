@@ -8,7 +8,7 @@
         "text":"<i><span class='c1'>First Telephone Lines</span> To <span class='c2'>WIMAX</span></i>",
         "asset":
         {
-            "media":"/images/world-technology-background.jpg"
+            "media":"../images/world-technology-background.jpg"
         },
         "date": [
             {
@@ -17,7 +17,7 @@
                 "text":"The first telephone lines were established in Kathmandu in 1913, followed by establishment of Open wire Trunk Link from Kathmandu to Raxaul (India) in 1914",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/pet___you.jpg"
                 }
             },
             {
@@ -26,7 +26,7 @@
                 "text":"25 lines automatic exchange in Royal Palace in 1935, however, telephone lines were open to public only in 1955",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/pet___you.jpg"
                 }
             },
             {
@@ -35,7 +35,7 @@
                 "text":"Known as Telecommunication Department at the time of establishment, its name was changed Telecommunications Development Board in 1969. After the enactment of Communications Corporation Act 1971, it was formally established as fully state-owned corporation called Nepal Telecommunication Corporation in 1975",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/pet___you.jpg"
                 }
             },
             {
@@ -44,7 +44,7 @@
                 "text":"Major milestones in the 80s were establishment of digital Telephone Exchange and Commencement of STD service.",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/pet___you.jpg  "
+                    "media":"assets/img/shots/pet___you.jpg  "
                 }
             },
             {
@@ -53,7 +53,7 @@
                 "text":"Installation of Optical Fiber Network.",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/pet___you.jpg"
                 }
             },
             {
@@ -62,7 +62,7 @@
                 "text":"The year 1996 saw a lot of major achievements in Telecom Industry of Nepal. VSAT services were introducted and Independent Int. Gateway Exchange was established.In the same year automation of the entire Telephone Network and Conversion of all Transmission link to Digital transmission link was done.",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/pet___you.jpg"
                 }
             },
             {
@@ -71,7 +71,7 @@
                 "text":"End of 90s, in 1999, Nepal Telecom finally launches GSM Mobile service",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/pet___you.jpg"
                 }
             },
             {
@@ -80,7 +80,7 @@
                 "text":"UTL got license for CDMA WLL and Limited mobility.",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/pet___you.jpg"
                 }
             },
             {
@@ -89,7 +89,7 @@
                 "text":"Nepal Telecom introduces GSM Prepaid Service and in the same year STM Telecom sanchar licensed for rural Telephony",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/pet___you.jpg"
                 }
             },
             {
