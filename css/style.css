@@ -300,6 +300,11 @@ a img {
 
 /*operators*/
 
+.operators{
+  background: #026073;
+  padding: 20px 0 50px;
+}
+
 .operators-wrapper {
   position: relative;
   border-radius: 50%;
@@ -319,6 +324,18 @@ a img {
   color: #999;
 }
 
+.circular_chart{
+  height: 250px;
+  width: 225px;
+  display: inline-block;
+  margin: 0px 25px;
+}
+
+.circular_chart canvas{
+  top: 0;
+  left: 0;
+}
+
 .overview{
   font-size: 1.2em;
   margin-top: 22%;
@@ -329,6 +346,7 @@ a img {
   color: #333;
   font-family: 'quicksandbook';
 }
+
 .box {
   width: 140px;
   line-height: 140px;
@@ -393,77 +411,13 @@ a img {
 
 #circle b{
   color: #def;
-  font-family: quicksandbook;
-  line-height: 26px;
-  font-size: 16px;
-  text-shadow: 1px 1px 1px #000;
-}
-.close{
-  cursor: pointer;
-  background: rgb(160, 41, 36);
-  padding: 2px 8px;
-  border-radius: 2px;
-  box-shadow: 1px 1px 1px #000;
-}
-.close:hover{
-  background: rgb(192, 50, 44);
-}
-.text {
-  display: none;
 }
 
-#circle div{
-  display: none;
+.legends_chart{
+  text-align: left;
+  margin-left: 40px;
+  font-family: 'quicksandbook';
 }
-
-.stats-bar{
-  width: 280px;
-  border: 1px solid #ddd;
-  height: 20px;
-  margin: 0 auto;
-  padding: 1px;
-  position: relative;
-}
-.stats-bar span{
-  height: 20px;
-  float: left;
-}
-.green{
-  background: #8CC63E;
-}
-.blue{
-  background: #2A6FA1;
-}
-.red{
-  background: #E42741;
-}
-.orange{
-  background: #F3912E;
-}
-.yellow{
-  background: #F2A544;
-}
-.gray{
-  background: #777;
-}
-.purple{
-  background: #9F85B2;
-}
-.blue-hue{
-  background: #4748AA;
-}
-.stats-details ul{
-  margin: 8px 40px;
-  padding: 0px;
-}
-.stats-details li{
-  display: inline-block;
-  color: #fff;
-  padding: 0px 4px;
-  font-size: 12px;
-  line-height: 20px
-}
-
 
 /*policies*/
 
