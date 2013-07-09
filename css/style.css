@@ -313,6 +313,7 @@ a img {
   text-align: right;
   font-size: 48px;
   color: #fff;
+  margin-bottom: 0;
 }
 
 .circular_chart{
@@ -339,7 +340,7 @@ a img {
 }
 
 .operators-block{
-  margin-top: 250px;
+  margin-top: 160px;
 }
 
 .operators-block .operators-list{
