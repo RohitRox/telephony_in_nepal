@@ -194,16 +194,8 @@ body {
 }
 
 .graphs{
-  background: #00b1e1;
+  background: #e2674a;
   padding-bottom: 20px;
-}
-
-.data-green {
-  background: #3CBEA0;
-}
-
-.data-blue {
-  background: #00b1e1;
 }
 
 .policies{
@@ -273,10 +265,10 @@ a img {
   margin-top: 1px;
 }
 .legend.tele .list-box{
-  background: #00b1e1;
+  background: #e2674a;
 }
 .legend.tele{
-  color: #00b1e1;
+  color: #e2674a;
 }
 .legend.data .list-box{
   background: #3CBEA0;
