@@ -17,7 +17,7 @@
                 "text":"The first telephone lines were established in Kathmandu in 1913, followed by establishment of Open wire Trunk Link from Kathmandu to Raxaul (India) in 1914",
                 "asset":
                 {
-                    "media":"assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/telephone.jpg"
                 }
             },
             {
@@ -26,7 +26,7 @@
                 "text":"25 lines automatic exchange in Royal Palace in 1935, however, telephone lines were open to public only in 1955",
                 "asset":
                 {
-                    "media":"assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/telephone-line.jpg"
                 }
             },
             {
@@ -35,7 +35,7 @@
                 "text":"Known as Telecommunication Department at the time of establishment, its name was changed Telecommunications Development Board in 1969. After the enactment of Communications Corporation Act 1971, it was formally established as fully state-owned corporation called Nepal Telecommunication Corporation in 1975",
                 "asset":
                 {
-                    "media":"assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/ntc.jpg"
                 }
             },
             {
@@ -44,7 +44,7 @@
                 "text":"Major milestones in the 80s were establishment of digital Telephone Exchange and Commencement of STD service.",
                 "asset":
                 {
-                    "media":"assets/img/shots/pet___you.jpg  "
+                    "media":"assets/img/shots/digital.jpg  "
                 }
             },
             {
@@ -53,7 +53,7 @@
                 "text":"Installation of Optical Fiber Network.",
                 "asset":
                 {
-                    "media":"assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/fiber.jpg"
                 }
             },
             {
@@ -62,7 +62,7 @@
                 "text":"The year 1996 saw a lot of major achievements in Telecom Industry of Nepal. VSAT services were introducted and Independent Int. Gateway Exchange was established.In the same year automation of the entire Telephone Network and Conversion of all Transmission link to Digital transmission link was done.",
                 "asset":
                 {
-                    "media":"assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/vast.jpg"
                 }
             },
             {
@@ -71,7 +71,7 @@
                 "text":"End of 90s, in 1999, Nepal Telecom finally launches GSM Mobile service",
                 "asset":
                 {
-                    "media":"assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/gsm.jpg"
                 }
             },
             {
@@ -80,7 +80,7 @@
                 "text":"UTL got license for CDMA WLL and Limited mobility.",
                 "asset":
                 {
-                    "media":"assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/utl.jpg"
                 }
             },
             {
@@ -89,7 +89,7 @@
                 "text":"Nepal Telecom introduces GSM Prepaid Service and in the same year STM Telecom sanchar licensed for rural Telephony",
                 "asset":
                 {
-                    "media":"assets/img/shots/pet___you.jpg"
+                    "media":"assets/img/shots/smart-telecom.jpg"
                 }
             },
             {
@@ -98,9 +98,54 @@
                 "text":"The Nepal Telecom Corporation was transformed to Nepal Doorsanchar Company Limited and in the same year Pre-paid Calling Card Service was introduced.",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/pet___you.jpg"
+                    "media":"/timeline/assets/img/shots/telecom.jpg"
                 }
+            },
+            {
+                "startDate":"1/1/2005",
+                "headline":"Mero Mobile",
+                "text":"Year 2005 sees a breakthrough in the monopoly of Nepal Telecom in telecom industry of Nepal, a new service provider Mero Mobile introduces and launches its GSM Service. Other milestones we see are Outsourcing of Enquiry Service (197),  Access Network Services by Nepal Telecom, Soft launch of CDMA.",
+                "asset":
+                {
+                    "media":"/timeline/assets/img/shots/mero-mobile.png"
+                }
+            },
+           {
+            "startDate":"1/1/2007",
+            "headline":"GPRS, 3G and CRBT",
+            "text":"Nepal Telecom introduces GPRS, 3G and CRBT Services introduced in GSM Mobile becoming first operator to provide 3G Service in South Asia. National Roaming for CDMA Mobile (Sky Phone) was started in the same year.",
+            "asset":
+            {
+                "media":"/timeline/assets/img/shots/gprs.png"
             }
+          },
+           {
+            "startDate":"1/1/2008",
+            "headline":" Broadband ADSL Service And NCELL",
+            "text":"Broadband ADSL Service launched.(Nepal Telecom) Smart Tel awarded license for GSM rural telephony for 4 Development region other than EDR. Teliasonera Aquired Ncell, then Spice Nepal (Ncell) Nepal Satellite TeleCommunications awarded license for GSM rural telephony in MWDR.",
+            "asset":
+            {
+                "media":"/timeline/assets/img/shots/adsl.jpg"
+            }
+          },
+          {
+            "startDate":"1/1/2010",
+            "headline":" More and more services",
+            "text":"Mero Mobile Rebranded to Ncell. Blackberry Service launched in Ncell. EVDO Service started (Nepal Telecom) High Speed data Card launched from Ncell. Ncell Connect. High Speed Internet on the Top of the world (Ncell)",
+            "asset":
+            {
+                "media":"/timeline/assets/img/shots/ncell.jpg"
+            }
+          },
+          {
+            "startDate":"1/1/2013",
+            "headline":" Wimax",
+            "text":"Nepal Telecom launches the 4G WiMAX IEEE 802.16e service first time in Nepal. Customers can get upto 20 Mbps.",
+            "asset":
+            {
+                "media":"/timeline/assets/img/shots/wimax.jpg"
+            }
+          }
         ]
     }
 }

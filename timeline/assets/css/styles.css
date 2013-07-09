@@ -211,10 +211,19 @@ section, footer, header{
 	border:none;
 }
 
+#timeline .slider-item img {
+	border-radius: 50%;
+	max-height: 400px!important;
+	height: 360px;
+	border: 10px dotted #fff;
+	width: 360px;
+	padding: 10px;
+}
+
 /* Customizing the first slide - the cover */
 
 #timeline .slider-item:nth-child(1) h2{
-	font:normal 70px/1 'Antic Slab','Segoe UI',sans-serif;
+	font:normal 30px/1 'Antic Slab','Segoe UI',sans-serif;
 	background:rgba(0,0,0,0.3);
 	white-space: nowrap;
 	padding:10px 5px 5px 20px;
@@ -224,7 +233,7 @@ section, footer, header{
 }
 
 #timeline .slider-item:nth-child(1) p i{
-	font:normal normal 40px 'Dancing Script','Segoe UI',sans-serif;
+	font:normal normal 30px 'Dancing Script','Segoe UI',sans-serif;
 	background:rgba(0,0,0,0.3);
 	white-space: nowrap;
 	padding:5px 20px;
