@@ -342,9 +342,12 @@ a img {
   font-family: 'quicksandbook';
 }
 .legends_chart{
-  text-align: left;
+ text-align: left;
   margin-left: 40px;
   font-family: quicksandbook;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 /*policies*/
