@@ -302,7 +302,7 @@ a img {
 
 .operators{
   background: #026073;
-  padding: 20px 0 50px;
+  padding: 20px 0 0;
 }
 
 .operators-wrapper {
@@ -321,7 +321,7 @@ a img {
 .operators h1 {
   text-align: right;
   font-size: 48px;
-  color: #999;
+  color: #fff;
 }
 
 .circular_chart{
