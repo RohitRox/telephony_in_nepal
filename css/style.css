@@ -13,12 +13,12 @@
 }
 
 @font-face {
-    font-family: 'quicksandbook';
+    font-family: 'ubuntu';
     src: url('../fonts/quicksand_book-webfont.eot');
     src: url('../fonts/quicksand_book-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/quicksand_book-webfont.woff') format('woff'),
          url('../fonts/quicksand_book-webfont.ttf') format('truetype'),
-         url('../fonts/quicksand_book-webfont.svg#quicksandbook') format('svg');
+         url('../fonts/quicksand_book-webfont.svg#ubuntu') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -85,7 +85,7 @@ body {
 }
 
 .navigation li span {
-  font-family: 'quicksandbook';
+  font-family: 'ubuntu';
   color: #fff;
   margin-left: 40px;
   text-align: right;
@@ -122,8 +122,8 @@ body {
 }
 
 .button span {
-  font-family: 'quicksandbook';
-  font-size: 16px;
+  font-family: 'ubuntu';
+  font-size: 14px;
   font-weight: bold;
   color: #fff;
   display: block;
@@ -171,7 +171,7 @@ body {
 
 .tag {
   font-size: 38px;
-  font-family: 'quicksandbook';
+  font-family: 'ubuntu';
   text-transform: uppercase;
 }
 
@@ -314,13 +314,30 @@ a img {
   font-size: 48px;
   color: #fff;
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .circular_chart{
   height: 250px;
-  width: 225px;
+  width: 275px;
   display: inline-block;
-  margin: 0px 25px;
+  margin-left: 20px;
+}
+
+.circular_chart.first {
+  margin-left: -400px;
+}
+
+.circular_chart.last {
+  margin-left: 140px;
+  display: block;
+
+}
+
+.chart {
+  float: right;
+  margin-top: -450px;
+  width: 426px;
 }
 
 .circular_chart canvas{
@@ -336,23 +353,29 @@ a img {
   font-weight: 100;
   letter-spacing: 0px;
   color: #333;
-  font-family: 'quicksandbook';
+  font-family: 'ubuntu';
 }
 
 .operators-block{
-  margin-top: 160px;
+  float: right;
+  width: 490px;
+  margin-top: -140px;
 }
 
 .operators-block .operators-list{
   display: inline-block;
   cursor: pointer;
-  margin: 0 50px;
+  margin: 0 50px 20px;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   transition: opacity .4s linear .4s;
   -webkit-transition: opacity .4s linear .4s;
-  -moz-transition: opacity .4s linear .4s;;
+  -moz-transition: opacity .4s linear .4s;
+}
+
+.operators-block .operators-list img {
+  vertical-align: middle;
 }
 
 .operators-list:hover{
@@ -361,13 +384,26 @@ a img {
   opacity: 1;
 }
 
-.legends_chart{
+.legends_chart {
   text-align: left;
   margin-left: 40px;
-  font-family: "quicksandbook";
+  font-family: "ubuntu";
   font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  color: #fff;
+  width: 173px;
+  float: left;
+}
+
+.legends_chart div {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 24px;
+}
+
+.legends_chart.last {
+  clear: both;
+  margin-top: 20px;
 }
 
 /*policies*/
@@ -378,16 +414,17 @@ a img {
 }
 
 .policies-wrapper {
-  padding-top: 40px;
+  padding-top: 80px;
   overflow: hidden;
 }
 
 .policies-block {
-  background: #95b636;
-  width: 190px;
+  background-color: #cde48a;
+  width: 204px;
   float: left;
   padding: 14px 0;
-  margin-left: 50px;
+  margin-left: 36px;
+  border-bottom: 4px solid #a4c447;
 }
 
 .policies1 {
@@ -395,13 +432,17 @@ a img {
 }
 
 .operator-logo {
-  background: url(../images/gradient-bg.gif) repeat-x 0 0;
-  line-height: 86px;
+  background: url(../images/circle-bg.png) no-repeat center;
+  line-height: 146px;
   text-align: center;
+  margin-top: -106px;
+  border-bottom: 6px solid #b1d057;
+  padding-bottom: 30px;
 }
 
 .operator-logo img {
   vertical-align: middle;
+  margin-top: 30px;
 }
 
 .policies h1 {
@@ -409,15 +450,28 @@ a img {
 }
 
 .policies-block ul {
-  padding: 0 35px;
+  padding: 10px 35px 0;
+  margin: 0;
+  border-top: 6px solid #b1d057;
 }
 
 .policies-block ul li {
   list-style: none;
-  color: #fff;
-  font: 16px/20px 'quicksandbook';
+  color: #555;
+  font: 16px/20px 'ubuntu';
   padding: 13px 0;
   text-align: center;
+}
+
+.name {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(114,114,114,0.6);
+  font-size: 16px;
+  border-top: 1px dashed #fff; 
+  border-bottom: 1px dashed #fff; 
+  background: #b1d057;
+  line-height: 36px;
+  font-family: 'ubuntu';
 }
 
 /*punchline*/
@@ -431,7 +485,7 @@ a img {
 
 .punch-line {
   font-size: 38px;
-  font-family: 'quicksandbook';
+  font-family: 'ubuntu';
   color: #3d3d3d;
   text-transform: uppercase;
 }

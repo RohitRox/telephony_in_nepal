@@ -28,13 +28,12 @@ $(document).ready(function(){
 
     var title = new Kinetic.Text({
         x:x-80,
-        y:255,
+        y:250,
         text: title,
-        fontFamily: 'quicksandbook',
+        fontFamily: 'ubuntu',
         fill: "#fff",
-        stroke: "#fff",
-        strokeWidth: 1,
-        fontSize: '12'
+        strokeWidth: 0,
+        fontSize: '13'
     });
 
     layer.add(title);
@@ -78,7 +77,7 @@ $(document).ready(function(){
         y: y,
         radius: radius,
         stroke: 'rgba(255, 255, 255,.2)',
-        strokeWidth: 7
+        strokeWidth: 8
       });
 
     layer.add(circle_outer);
@@ -157,7 +156,7 @@ $(document).ready(function(){
         stroke: "#fff",
         strokeWidth: 1
       });
-      var per = new Kinetic.Text({x:4,y:height-tmp+4, text: 25*i+" %", fill: "#fff", fontFamily: "quicksandbook"});
+      var per = new Kinetic.Text({x:4,y:height-tmp+4, text: 25*i+" %", fill: "#fff", fontFamily: "ubuntu"});
       layer.add(per);
       layer.add(line);
     }
@@ -206,7 +205,7 @@ $(document).ready(function(){
         x:x-35,
         y:height-y-69,
         text: self[data_selector]+"%" ,
-        fontFamily: 'quicksandbook',
+        fontFamily: 'ubuntu',
         fill: color_pref,
         stroke: color_pref,
         strokeWidth: 1,
@@ -223,7 +222,7 @@ $(document).ready(function(){
         easing : Kinetic.Easings.BounceEaseIn
       })).play();
 
-      var date = new Kinetic.Text({x:x-40,y:height-15, text: self.date , fill: "#fff",fontFamily: 'quicksandbook', fontSize: '12'});
+      var date = new Kinetic.Text({x:x-40,y:height-15, text: self.date , fill: "#fff",fontFamily: 'ubuntu', fontSize: '12'});
       layer.add(date);
       stage.add(layer);
       k++;
