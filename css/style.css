@@ -138,7 +138,7 @@ body {
 
 .wrap{
 /*  min-height: 600px;*/
-  width: 960px;
+  width: 1030px;
   margin: 0 auto;
 }
 .wrap-out{
@@ -318,20 +318,29 @@ a img {
 }
 
 .circular_chart{
-  height: 250px;
-  width: 275px;
   display: inline-block;
-  margin-left: 20px;
+  position: relative;
+  float: left;
 }
 
-.circular_chart.first {
-  margin-left: -400px;
+.circular_chart h2{
+  color: #fff;
+  font-size: 13px;
+  margin-top: 0;
+  font-family: ubuntu, helvetica, arial;
+  display: inline-block;
+	text-align: center;
 }
 
-.circular_chart.last {
-  margin-left: 140px;
-  display: block;
-
+.vertical{
+  position: absolute;
+  left: -20px;
+  top: 35%;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .chart {
@@ -357,15 +366,14 @@ a img {
 }
 
 .operators-block{
-  float: right;
-  width: 490px;
-  margin-top: -140px;
+  clear: both;
+  margin-top: 140px;
 }
 
 .operators-block .operators-list{
   display: inline-block;
   cursor: pointer;
-  margin: 0 50px 20px;
+  margin: 100px 50px 20px;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
@@ -386,14 +394,13 @@ a img {
 
 .legends_chart {
   text-align: left;
-  margin-left: 40px;
   font-family: "ubuntu";
   font-weight: 600;
   font-size: 13px;
   line-height: 20px;
   color: #fff;
   width: 173px;
-  float: left;
+  position: absolute;
 }
 
 .legends_chart div {

@@ -8,7 +8,6 @@
         "text":"<i><span class='c1'>First Telephone Lines</span> To <span class='c2'>WIMAX</span></i>",
         "asset":
         {
-            "media":"../images/world-technology-background.jpg"
         },
         "date": [
             {
@@ -98,7 +97,7 @@
                 "text":"The Nepal Telecom Corporation was transformed to Nepal Doorsanchar Company Limited and in the same year Pre-paid Calling Card Service was introduced.",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/telecom.jpg"
+                    "media":"assets/img/shots/telecom.jpg"
                 }
             },
             {
@@ -107,7 +106,7 @@
                 "text":"Year 2005 sees a breakthrough in the monopoly of Nepal Telecom in telecom industry of Nepal, a new service provider Mero Mobile introduces and launches its GSM Service. Other milestones we see are Outsourcing of Enquiry Service (197),  Access Network Services by Nepal Telecom, Soft launch of CDMA.",
                 "asset":
                 {
-                    "media":"/timeline/assets/img/shots/mero-mobile.png"
+                    "media":"assets/img/shots/mero-mobile.png"
                 }
             },
            {
@@ -116,7 +115,7 @@
             "text":"Nepal Telecom introduces GPRS, 3G and CRBT Services introduced in GSM Mobile becoming first operator to provide 3G Service in South Asia. National Roaming for CDMA Mobile (Sky Phone) was started in the same year.",
             "asset":
             {
-                "media":"/timeline/assets/img/shots/gprs.png"
+                "media":"assets/img/shots/gprs.png"
             }
           },
            {
@@ -125,7 +124,7 @@
             "text":"Broadband ADSL Service launched.(Nepal Telecom) Smart Tel awarded license for GSM rural telephony for 4 Development region other than EDR. Teliasonera Aquired Ncell, then Spice Nepal (Ncell) Nepal Satellite TeleCommunications awarded license for GSM rural telephony in MWDR.",
             "asset":
             {
-                "media":"/timeline/assets/img/shots/adsl.jpg"
+                "media":"assets/img/shots/adsl.jpg"
             }
           },
           {
@@ -134,7 +133,7 @@
             "text":"Mero Mobile Rebranded to Ncell. Blackberry Service launched in Ncell. EVDO Service started (Nepal Telecom) High Speed data Card launched from Ncell. Ncell Connect. High Speed Internet on the Top of the world (Ncell)",
             "asset":
             {
-                "media":"/timeline/assets/img/shots/ncell.jpg"
+                "media":"assets/img/shots/ncell.jpg"
             }
           },
           {
@@ -143,7 +142,7 @@
             "text":"Nepal Telecom launches the 4G WiMAX IEEE 802.16e service first time in Nepal. Customers can get upto 20 Mbps.",
             "asset":
             {
-                "media":"/timeline/assets/img/shots/wimax.jpg"
+                "media":"assets/img/shots/wimax.jpg"
             }
           }
         ]

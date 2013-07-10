@@ -14,31 +14,18 @@ $(document).ready(function(){
     return (360/100)*parseFloat(value);
   }
 
-  function circular_chart_init(el, data_array, title){
+  function circular_chart_init(el, data_array, title,h,w){
     var stage = new Kinetic.Stage({
       container: el,
-      width: 280,
-      height: 280,
+      width: w,
+      height: h,
       fill: "def"
     });
 
-    var x = 122, y = 125;
+    var x = w/2, y = h/2;
 
     var layer = new Kinetic.Layer();
-
-    var title = new Kinetic.Text({
-        x:x-80,
-        y:250,
-        text: title,
-        fontFamily: 'ubuntu',
-        fill: "#fff",
-        strokeWidth: 0,
-        fontSize: '13'
-    });
-
-    layer.add(title);
-
-    var radius = 40;
+    var radius = 100;
     var startAngle = 0;
 
     for(var i = 0; i < data_array.length; i++){
@@ -76,7 +63,7 @@ $(document).ready(function(){
         x: x,
         y: y,
         radius: radius,
-        stroke: 'rgba(255, 255, 255,.2)',
+        stroke: 'rgba(177, 177, 177,.2)',
         strokeWidth: 8
       });
 
@@ -91,29 +78,29 @@ $(document).ready(function(){
 
 
   var telephone_penetration_data = [
-  {data: "Mobile(GSM, CDMA)", color: "#F45649", value: 68.45},
-  {data: "Fixed(Pstn, WLL)", color: "#65A556", value: 5.52},
+  {data: "Mobile(GSM, CDMA)", color: "rgb(195, 133, 236)", value: 68.45},
+  {data: "Fixed(Pstn, WLL)", color: "rgb(133, 218, 113)", value: 5.52},
   {data: "Others (LM, GMPCS)", color: "#FE9F8B", value: 3.14}
   ];
 
   var telephony_market_share = [
-  {data: "NCell", color: "#F45649", value: 49},
-  {data: "NTC", color: "#65A556", value: 43},
+  {data: "NCell", color: "rgb(195, 133, 236)", value: 49},
+  {data: "NTC", color: "rgb(133, 218, 113)", value: 43},
   {data: "UTL", color: "#FE9F8B", value: 4},
-  {data: "STPL", color: "#2A9BA4", value: 3},
+  {data: "STPL", color: "rgb(37, 220, 228)", value: 3},
   {data: "NSTPL", color: "#DEC628", value: 1}
   ];
 
   var internet_market_share =[
-  {data: "NCell", color: "#F45649", value: 52},
-  {data: "NTC", color: "#65A556", value: 46},
+  {data: "NCell", color: "rgb(195, 133, 236)", value: 52},
+  {data: "NTC", color: "rgb(133, 218, 113)", value: 46},
   {data: "UTL", color: "#FE9F8B", value: 1},
-  {data: "STPL", color: "#2A9BA4", value: 1}
+  {data: "STPL", color: "rgb(37, 220, 228)", value: 1}
   ];
 
-  circular_chart_init("tele_penetration",telephone_penetration_data,"TELEPHONE PENETRATION");
-  circular_chart_init("tele_market_share",telephony_market_share,"TELEPHONE MARKET SHARE");
-  circular_chart_init("internet_share",internet_market_share,"INTERNET MARKET SHARE");
+  circular_chart_init("tele_penetration",telephone_penetration_data,"TELEPHONE PENETRATION",300,300);
+  circular_chart_init("tele_market_share",telephony_market_share,"TELEPHONE MARKET SHARE",380,380);
+  circular_chart_init("internet_share",internet_market_share,"INTERNET MARKET SHARE",350,350);
 
   // graphs js
 
