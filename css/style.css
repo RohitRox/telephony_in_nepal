@@ -254,7 +254,7 @@ a img {
   background: #fff;
   border-radius: 6px;
   margin: 0px 0 40px;
-  font-family: 'bebas';
+  font-family: 'ubuntu';
   font-size: 13px;
 }
 .legend{
@@ -411,8 +411,8 @@ a img {
 }
 
 .legends_chart div {
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 13px;
+  line-height: 22px;
   padding-left: 20px;
 }
 
@@ -495,7 +495,7 @@ a img {
 
 .punchline {
   text-align: center;
-  padding: 60px 0 0;
+  padding: 40px 0 0;
   background: #ccc;
 }
 
