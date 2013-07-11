@@ -32,7 +32,6 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
   font-family: 'bebas';
   font-size:38px;
-  padding: 15px;
   margin-bottom: 40px;
   color: #fff;
   margin-top: 0;
@@ -220,9 +219,23 @@ a img {
 
 /* graphs */
 
-.wrap h1 {
+.wrap-title {
+  overflow: hidden;
+}
+
+.wrap-title h1 {
   font-size: 48px;
- text-transform: uppercase;
+  text-transform: uppercase;
+  float: left;
+}
+
+.help {
+  float: left;
+  margin: 20px;
+}
+
+.help a {
+  display: block;
 }
 
 .wrap h1 span {
@@ -244,7 +257,7 @@ a img {
   float: right;
   background: #fff;
   border-radius: 6px;
-  margin: -90px 0 40px;
+  margin: 0px 0 40px;
   font-family: 'Arial';
   font-weight: bold;
   font-size: 0.85em;
@@ -310,7 +323,7 @@ a img {
 }
 
 .operators h1 {
-  text-align: right;
+  text-align: left;
   font-size: 48px;
   color: #fff;
   margin-bottom: 0;
@@ -332,7 +345,7 @@ a img {
 	text-align: center;
 }
 
-.vertical{
+/*.vertical{
   position: absolute;
   left: -20px;
   top: 35%;
@@ -342,7 +355,7 @@ a img {
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-
+*/
 .chart {
   float: right;
   margin-top: -450px;
@@ -373,7 +386,7 @@ a img {
 .operators-block .operators-list{
   display: inline-block;
   cursor: pointer;
-  margin: 100px 50px 20px;
+  margin: 50px 50px 20px;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
