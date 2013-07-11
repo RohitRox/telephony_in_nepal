@@ -381,12 +381,12 @@ a img {
   display: inline-block;
   cursor: pointer;
   margin: 50px 80px 20px;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
-  transition: opacity .4s linear .4s;
-  -webkit-transition: opacity .4s linear .4s;
-  -moz-transition: opacity .4s linear .4s;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  transition: opacity .2s linear .2s;
+  -webkit-transition: opacity .2s linear .2s;
+  -moz-transition: opacity .2s linear .2s;
 }
 
 .operators-block .operators-list img {
@@ -482,8 +482,8 @@ a img {
 .name {
   color: #789c0f;
   font-size: 15px;
-  border-top: 1px dashed #fff; 
-  border-bottom: 1px dashed #fff; 
+  border-top: 1px dashed #fff;
+  border-bottom: 1px dashed #fff;
   background: #b1d057;
   line-height: 36px;
   font-family: 'ubuntu';
@@ -521,6 +521,7 @@ a img {
   list-style: none;
   line-height: 1.6em;
   margin: 0;
+  padding: 0;
 }
 
 /*footer*/
@@ -531,7 +532,7 @@ a img {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #333;
+  background: rgba(26, 7, 3, .7);
   padding: 6px 0 10px;
   border-top: 1px solid #2d2d2d;
 }
@@ -559,8 +560,9 @@ a img {
 .footer ul li a {
   color: #3d3d3d;
   font-size: 18px;
-  font-family: 'ubuntu';
-  color: #ddd;
+  font-family: ubuntu;
+  color: rgba(255,255,255,.8);
+  text-shadow: 0px 1px 1px rgba(22, 11, 6, .8);
 }
 
 .kineticjs-content {
@@ -578,15 +580,17 @@ a img {
 /*sources*/
 
 .sources {
-  background: #38363B;
+  background: url(/images/retina_wood.png);
   position: relative;
 }
 
 .sources h3 {
-  color: #fff;
+  color: rgb(185, 132, 96);
+  font-weight: bold;
+  text-shadow: 2px 2px 0px rgb(248, 240, 234);
+  font-size: 2.5em;
   font-family: 'bebas';
   padding: 40px 0 20px;
-  font-size: 27px;
   letter-spacing: 1px;
   word-spacing: 4px;
 }
@@ -597,13 +601,23 @@ a img {
 }
 
 .data_sources ul li a {
-  color: #fff;
+  color: rgb(162, 119, 80);
+}
+
+.data_sources ul li a:hover{
+  text-decoration: underline;
 }
 
 .data_sources ul li.stats {
-  color: #fff;
+  color: #666;
   font-size: 12px;
   padding: 10px 0;
   font-style: italic;
+}
+.addthis_toolbox{
+  text-align: center;
+  width: 360px;
+  margin: 0 auto;
+  margin-top: 35px;
 }
 
