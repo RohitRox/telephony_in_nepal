@@ -25,7 +25,7 @@ $(document).ready(function(){
     var x = w/2, y = h/2;
 
     var layer = new Kinetic.Layer();
-    var radius = 100;
+    var radius = 80;
     var startAngle = 0;
 
     for(var i = 0; i < data_array.length; i++){
@@ -63,8 +63,8 @@ $(document).ready(function(){
         x: x,
         y: y,
         radius: radius,
-        stroke: 'rgba(177, 177, 177,.2)',
-        strokeWidth: 8
+        stroke: 'rgba(17, 150, 171,1)',
+        strokeWidth: 7
       });
 
     layer.add(circle_outer);
@@ -194,8 +194,7 @@ $(document).ready(function(){
         text: self[data_selector]+"%" ,
         fontFamily: 'ubuntu',
         fill: color_pref,
-        stroke: color_pref,
-        strokeWidth: 1,
+        strokeWidth: 0,
         fontSize: '20',
         fontWeight: 'bold',
         'z-index': '11'

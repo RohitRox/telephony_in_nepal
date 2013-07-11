@@ -20,6 +20,7 @@
 		<li data-slide="4"><span>Penetration Statistics</span></li>
 		<li data-slide="5"><span>Policies</span></li>
 		<li data-slide="6"><span>Comment</span></li>
+		<li data-slide="7"><span>Sources</span></li>
 	</ul>
   <section class="wrap-out title" data-slide="1">
   <div class="wrap">
@@ -52,7 +53,7 @@
 		  </div>
 
 		  <div class="circular_chart">
-			<div id="tele_penetration"></div>
+			<div id="tele_penetration" class="tel-penetration"></div>
 			<div class="legends_chart" style="top: 116px; left: 85px;">
 			  <div style="color: rgb(222, 169, 252)"><span>&#9899; Mobile 68.45%</span></div>
 			  <div style="color: rgb(133, 218, 113)"><span>&#9899; Fixed 5.52%</span></div>
@@ -62,7 +63,7 @@
 		   </div>
 
 		  <div class="circular_chart">
-			<div id="internet_share"></div>
+			<div id="internet_share" class="internet-share"></div>
 			<div class="legends_chart" style="top: 129px; left: 128px;">
 			  <div style="color: rgb(222, 169, 252)"><span>&#9899; NCell 52%</span></div>
 			  <div style="color: rgb(133, 218, 113)"><span>&#9899; NTC 46%</span></div>
@@ -175,6 +176,8 @@
   <div class="wrap">
     <div class="punch-line">What Does it mean to<span>Economic Perspective</span>of Nepal?</div>
       <div id="disqus_thread"></div>
+      <a class="button" data-slide="7" title=""><span>Scroll Down</span></a>
+  </div>
        <script type="text/javascript">
          if( window.location.hostname != "localhost")
          {
@@ -195,16 +198,29 @@
     var disqus_config = function () {
      this.language = "en";
     };
+
     </script>
+   </section>
+   <section class="wrap-out sources" data-slide="7">
+   	<div class="wrap">
     <div class="data_sources">
       <h3>Data Sources: </h3>
       <ul>
         <li><a href="http://www.nta.gov.np/en/mis-reports-en">http://www.nta.gov.np/en/mis-reports-en</a></li>
         <li><a href="http://en.wikipedia.org/wiki/Telecommunications_in_Nepal">http://en.wikipedia.org/wiki/Telecommunications_in_Nepal</a></li>
-        <li>* The stats data are as of July, 2013</li>
+        <li class="stats">* The stats data are as of July, 2013</li>
       </ul>
     </div>
-  </div>
+    <div class="footer-container">
+	<div class="footer">
+		<ul>
+			<li><a href="http://rohitjoshi.com.np/" target="_blank">Rohit Joshi</a></li>
+			<li><a href="http://ashaswot.com.np/" target="_blank">Shashwot Adhikari</a></li>
+			<li><a href="http://shresthasweta.com.np/" target="_blank">Sweta Shrestha</a></li>
+		</ul>
+	</div>
+	</div>
+	</div>
 </section>
 <script src="js/modernizr.custom.js"></script>
 

@@ -14,15 +14,16 @@
 
 @font-face {
     font-family: 'ubuntu';
-    src: url('../fonts/quicksand_book-webfont.eot');
-    src: url('../fonts/quicksand_book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/quicksand_book-webfont.woff') format('woff'),
-         url('../fonts/quicksand_book-webfont.ttf') format('truetype'),
-         url('../fonts/quicksand_book-webfont.svg#ubuntu') format('svg');
+    src: url('../fonts/ubuntu-r-webfont.eot');
+    src: url('../fonts/ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-r-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-r-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-r-webfont.svg#ubuntu') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
+
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: normal;
@@ -31,10 +32,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
   font-family: 'bebas';
-  font-size:38px;
+  font-size:36px;
   margin-bottom: 40px;
   color: #fff;
   margin-top: 0;
+  letter-spacing: 1px;
+  word-spacing: 4px;
 }
 h2 {
   font-size:30px;
@@ -224,25 +227,18 @@ a img {
 }
 
 .wrap-title h1 {
-  font-size: 48px;
   text-transform: uppercase;
   float: left;
+  padding: 30px 0 0;
 }
 
 .help {
   float: left;
-  margin: 20px;
+  margin: 40px 20px 0;
 }
 
 .help a {
   display: block;
-}
-
-.wrap h1 span {
-  font-size: 23px;
-  font-family: 'bebas';
-  display: block;
-  line-height: normal;
 }
 
 .graphs .wrap h1 {
@@ -258,9 +254,8 @@ a img {
   background: #fff;
   border-radius: 6px;
   margin: 0px 0 40px;
-  font-family: 'Arial';
-  font-weight: bold;
-  font-size: 0.85em;
+  font-family: 'bebas';
+  font-size: 13px;
 }
 .legend{
   float: left;
@@ -305,7 +300,7 @@ a img {
 /*operators*/
 
 .operators{
-  background: #026073;
+  background: #17899B;
   padding: 20px 0 0;
 }
 
@@ -324,7 +319,6 @@ a img {
 
 .operators h1 {
   text-align: left;
-  font-size: 48px;
   color: #fff;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -386,7 +380,7 @@ a img {
 .operators-block .operators-list{
   display: inline-block;
   cursor: pointer;
-  margin: 50px 50px 20px;
+  margin: 50px 80px 20px;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
@@ -408,17 +402,18 @@ a img {
 .legends_chart {
   text-align: left;
   font-family: "ubuntu";
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 16px;
   color: #fff;
   width: 173px;
   position: absolute;
+  margin-top: 4px;
 }
 
 .legends_chart div {
   font-size: 12px;
   line-height: 24px;
+  padding-left: 20px;
 }
 
 .legends_chart.last {
@@ -439,12 +434,12 @@ a img {
 }
 
 .policies-block {
-  background-color: #cde48a;
+  background-color: #a1c046;
   width: 204px;
   float: left;
   padding: 14px 0;
   margin-left: 36px;
-  border-bottom: 4px solid #a4c447;
+  border-bottom: 4px solid #99bc31;
 }
 
 .policies1 {
@@ -477,21 +472,23 @@ a img {
 
 .policies-block ul li {
   list-style: none;
-  color: #555;
+  color: #fff;
   font: 16px/20px 'ubuntu';
   padding: 13px 0;
   text-align: center;
+  text-shadow: 1px 1px 1px rgba(114,114,114,0.6);
 }
 
 .name {
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(114,114,114,0.6);
-  font-size: 16px;
+  color: #789c0f;
+  font-size: 15px;
   border-top: 1px dashed #fff; 
   border-bottom: 1px dashed #fff; 
   background: #b1d057;
   line-height: 36px;
   font-family: 'ubuntu';
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.4);
+  font-weight: bold;
 }
 
 /*punchline*/
@@ -525,3 +522,88 @@ a img {
   line-height: 1.6em;
   margin: 0;
 }
+
+/*footer*/
+
+.footer-container {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  padding: 6px 0 10px;
+  border-top: 1px solid #2d2d2d;
+}
+
+.footer {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.footer ul li:first-child {
+  margin-left: 0;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li {
+  list-style: none;
+  float: left;
+  margin-left: 296px;
+}
+
+.footer ul li a {
+  color: #3d3d3d;
+  font-size: 18px;
+  font-family: 'ubuntu';
+  color: #ddd;
+}
+
+.kineticjs-content {
+  height: 350px!important;
+}
+
+.tel-penetration .kineticjs-content {
+  height: 280px!important;
+}
+
+.internet-share .kineticjs-content {
+  height: 320px!important;
+}
+
+/*sources*/
+
+.sources {
+  background: #38363B;
+  position: relative;
+}
+
+.sources h3 {
+  color: #fff;
+  font-family: 'bebas';
+  padding: 40px 0 20px;
+  font-size: 27px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+.data_sources ul li {
+  padding-bottom: 8px;
+  font-family: 'ubuntu';
+}
+
+.data_sources ul li a {
+  color: #fff;
+}
+
+.data_sources ul li.stats {
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 0;
+  font-style: italic;
+}
+
