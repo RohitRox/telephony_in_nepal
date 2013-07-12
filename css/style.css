@@ -2,12 +2,12 @@
 /* CSS Document */
 
 @font-face {
-      font-family: 'bebas';
-      src: url('../fonts/bebas___-webfont.eot');
-      src: url('../fonts/bebas___-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/bebas___-webfont.woff') format('woff'),
-           url('../fonts/bebas___-webfont.ttf') format('truetype'),
-           url('../fonts/bebas___-webfont.svg#bebas') format('svg');
+      font-family: 'leaguegothic';
+      src: url('../fonts/leaguegothic-regular-webfont.eot');
+      src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+           url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+           url('../fonts/leaguegothic-regular-webfont.svg#leaguegothic') format('svg');
       font-weight: normal;
       font-style: normal;
 }
@@ -31,13 +31,14 @@ h1,h2,h3,h4,h5,h6 {
   margin:10px 0;
 }
 h1 {
-  font-family: 'bebas';
-  font-size:36px;
+  font-family: 'leaguegothic';
+  font-size:46px;
   margin-bottom: 40px;
   color: #fff;
   margin-top: 0;
   letter-spacing: 1px;
   word-spacing: 4px;
+  line-height: 44px;
 }
 h2 {
   font-size:30px;
@@ -75,7 +76,7 @@ body {
   height: 10px;
   background: white;
   border: 3px white solid;
-  margin: 20px;
+  margin: 20px 20px 20px 0;
   -webkit-border-radius: 18px;
   border-radius: 18px;
 }
@@ -192,7 +193,6 @@ body {
 
 .graphs{
   background: #e2674a;
-  padding-bottom: 20px;
 }
 
 .t_controles{
@@ -215,17 +215,18 @@ a img {
 
 .wrap-title {
   overflow: hidden;
+  padding-top: 30px;
 }
 
 .wrap-title h1 {
   text-transform: uppercase;
   float: left;
-  padding: 30px 0 0;
+/*  padding: 30px 0 0;*/
 }
 
 .help {
   float: left;
-  margin: 30px 20px 0;
+  margin: 7px 20px 0;
 }
 
 .help a {
@@ -342,7 +343,7 @@ a img {
   font-size: 1.2em;
   margin-top: 22%;
   line-height: 2em;
-  font-family: 'bebas';
+  font-family: 'leaguegothic';
   font-weight: 100;
   letter-spacing: 0px;
   color: #333;
@@ -485,12 +486,10 @@ a img {
 }
 
 .punch-line span {
-  font-family: 'bebas';
-  font-size: 84px;
+  font-family: 'leaguegothic';
+  font-size: 100px;
   color: #2d2d2d;
   display: block;
-  padding-top: 22px;
-  line-height: 110px;
 }
 
 .data_sources h3{
@@ -569,7 +568,7 @@ a img {
   font-weight: bold;
   text-shadow: 2px 2px 0px rgb(248, 240, 234);
   font-size: 2.5em;
-  font-family: 'bebas';
+  font-family: 'leaguegothic';
   padding: 40px 0 20px;
   letter-spacing: 1px;
   word-spacing: 4px;
@@ -601,3 +600,5 @@ a img {
   margin-top: 35px;
 }
 
+#timeline .slider .nav-previous { margin-left: 30px!important;}
+#timeline .slider .nav-next { margin-left: -60px!important;}
