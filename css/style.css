@@ -24,7 +24,6 @@
 }
 
 
-
 h1,h2,h3,h4,h5,h6 {
   font-weight: normal;
   color:#313131;
@@ -357,21 +356,19 @@ a img {
 
 .operators-block .operators-list{
   display: inline-block;
-  cursor: pointer;
   margin: 50px 80px 20px;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
   transition: opacity .2s linear .2s;
   -webkit-transition: opacity .2s linear .2s;
   -moz-transition: opacity .2s linear .2s;
 }
 
 .operators-block .operators-list img {
-  vertical-align: middle;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
 }
 
-.operators-list:hover{
+.operators-list img:hover{
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -602,3 +599,63 @@ a img {
 
 #timeline .slider .nav-previous { margin-left: 20px!important;}
 #timeline .slider .nav-next { margin-left: -60px!important;}
+
+#lean_overlay {
+  position: fixed;
+  z-index:100;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+  background: #000;
+  display: none;
+}
+.leanModal{
+  width: 520px;
+  display: none;
+  background: #FFF;
+  font-family: 'ubuntu', helvetica, arial;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+}
+
+.leanModal p{
+  padding: 30px;
+  text-align: justify;
+  margin-top: 0px;
+  line-height: 1.6em;
+}
+
+.modal-header{
+  background: #999;
+  padding: 6px 18px 10px 18px;
+}
+.modal-header h2{
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.modal_close{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url(/images/modal_close.png);
+  z-index: 2;
+}
+.ncell{
+  background: #642d88;
+}
+.ntc{
+  background: #24618e;
+}
+.utl{
+  background: #003366;
+}
+.stpl{
+  background: #db354c;
+}

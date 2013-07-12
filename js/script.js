@@ -5,6 +5,8 @@ $(document).ready(function(){
   $('.wrap-out').css('min-height', $(window).height()+'px');
   $('.milestones iframe').css('min-height', $(window).height()+'px');
 
+  $("a[rel*=leanModal]").leanModal({closeButton: ".modal_close"});
+
 });
   // operators circular charts
 
