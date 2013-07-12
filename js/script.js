@@ -63,7 +63,7 @@ $(document).ready(function(){
         x: x,
         y: y,
         radius: radius,
-        stroke: 'rgba(17, 150, 171,1)',
+        stroke: 'rgba(255, 255, 255,0.2)',
         strokeWidth: 7
       });
 
