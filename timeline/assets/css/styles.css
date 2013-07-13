@@ -147,6 +147,14 @@ section, footer, header{
 	font-family:'Segoe UI',sans-serif;
 }
 
+.slider .nav-previous {
+	margin-left: 20px;
+}
+
+.slider .nav-next {
+	margin-left: -60px;
+}
+
 .slider .nav-next .icon {
 	background: url("timeline.png") no-repeat scroll 72px -221px transparent;
 	width: 70px !important;
