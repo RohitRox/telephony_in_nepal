@@ -400,7 +400,8 @@ a img {
 
 
 .policies {
-  background: #b1d057;
+ /* background: #b1d057;*/
+ background: #99b93b;
 }
 
 .policies-wrapper {
@@ -409,12 +410,13 @@ a img {
 }
 
 .policies-block {
-  background-color: #a1c046;
-  width: 204px;
+ /* background-color: #a1c046;*/
+  background: rgba(255, 255, 255, 0.64);
+  width: 220px;
   float: left;
   padding: 14px 0;
-  margin-left: 36px;
-  border-bottom: 4px solid #99bc31;
+  margin-left: 33px;
+  border: 2px solid #fff;
 }
 
 .policies1 {
@@ -426,7 +428,7 @@ a img {
   line-height: 146px;
   text-align: center;
   margin-top: -106px;
-  border-bottom: 6px solid #b1d057;
+/*  border-bottom: 6px solid #b1d057;*/
   padding-bottom: 30px;
 }
 
@@ -442,16 +444,16 @@ a img {
 .policies-block ul {
   padding: 10px 35px 0;
   margin: 0;
-  border-top: 6px solid #b1d057;
+/*  border-top: 6px solid #b1d057;*/
 }
 
 .policies-block ul li {
   list-style: none;
-  color: #fff;
+  color: #777;
   font: 16px/20px 'ubuntu';
   padding: 13px 0;
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(114,114,114,0.6);
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
 }
 
 .name {
@@ -459,11 +461,12 @@ a img {
   font-size: 15px;
   border-top: 1px dashed #fff;
   border-bottom: 1px dashed #fff;
-  background: #b1d057;
+  background: #b4d161;
   line-height: 36px;
   font-family: 'ubuntu';
   text-shadow: 1px 1px 1px rgba(255,255,255,0.4);
   font-weight: bold;
+  outline: 3px solid #b4d161;
 }
 
 /*punchline*/
