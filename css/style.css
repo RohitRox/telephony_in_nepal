@@ -449,7 +449,7 @@ a img {
 
 .policies-block ul li {
   list-style: none;
-  color: #777;
+  color: #789c0f;
   font: 16px/20px 'ubuntu';
   padding: 13px 0;
   text-align: center;
@@ -458,11 +458,11 @@ a img {
 
 .name {
   color: #789c0f;
-  font-size: 15px;
+  font-size: 16px;
   border-top: 1px dashed #fff;
   border-bottom: 1px dashed #fff;
   background: #b4d161;
-  line-height: 36px;
+  line-height: 38px;
   font-family: 'ubuntu';
   text-shadow: 1px 1px 1px rgba(255,255,255,0.4);
   font-weight: bold;

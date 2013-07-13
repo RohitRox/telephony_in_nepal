@@ -231,7 +231,7 @@ section, footer, header{
 /* Customizing the first slide - the cover */
 
 #timeline .slider-item:nth-child(1) h2{
-	font:normal 30px/1 'Antic Slab','Segoe UI',sans-serif;
+	font:normal 50px/1 'Antic Slab','Segoe UI',sans-serif;
 	background:rgba(0,0,0,0.3);
 	white-space: nowrap;
 	padding:10px 5px 5px 20px;
