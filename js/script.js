@@ -65,7 +65,7 @@ $(document).ready(function(){
         x: x,
         y: y,
         radius: radius,
-        stroke: 'rgba(255, 255, 255,0.2)',
+        stroke: 'rgba(17, 134, 152,1)',
         strokeWidth: 7
       });
 
