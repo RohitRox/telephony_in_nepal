@@ -19,15 +19,16 @@
 	<ul class="navigation">
 		<li data-slide="1" class="active"><span>Home</span></li>
 		<li data-slide="2"><span>Milestones</span></li>
-		<li data-slide="3"><span>Service Providers</span></li>
-		<li data-slide="4"><span>Penetration Statistics</span></li>
-		<li data-slide="5"><span>Policies</span></li>
+		<li data-slide="3"><span>Penetration Statistics</span></li>
+		<li data-slide="4"><span>Telecommunication Market Share</span></li>
+		<!-- <li data-slide="5"><span>Policies</span></li> -->
 		<li data-slide="6"><span>Comment</span></li>
 		<li data-slide="7"><span>Sources</span></li>
 	</ul>
   <section class="wrap-out title" data-slide="1">
   <div class="wrap">
-  <img src="images/telephony_in_nepal.png" alt="telephony in nepal" style="margin-top: 8%"/>
+  <img src="images/telephony_in_nepal.png" alt="telephony in nepal" style="margin-top: 6%"/>
+  <h1>An insight into telecommunications of Nepal</h1>
   </div>
   <a class="button" data-slide="2" title=""><span>Scroll Down</span></a>
   </section>
@@ -35,10 +36,41 @@
 	   <iframe src='timeline/index.html' width='100%' height='660' frameborder='0'></iframe>
 	<a class="button" data-slide="3" title=""><span>Scroll Down</span></a>
   </section>
-	<section class="wrap-out operators" data-slide="3">
+  <section class="wrap-out graphs" data-slide="3">
+  <div class="wrap">
+    <div class="wrap-title">
+      <h1>Penetration Statistics</h1>
+        <div class="help">
+          <a href="#help_stats" rel="leanModal"><img src="images/question-icon.png" alt="" width="28" height="28"></a>
+           <div id="help_stats" class="leanModal">
+            <div class="modal-header">
+              <h2>Penetration Statistics</h2>
+              <a class="modal_close" href="javascript:void(0)"></a>
+            </div>
+            <p>Some text about Statistics and circles.</p>
+           </div>
+        </div>
+    </div>
+    <div class="legend-group">
+      <div class="legend tele active" data-val="tele_penetration" data-color="#e2674a">
+        <div class="list-box"></div> Teledensity Penetration
+      </div>
+      <div class="legend mobile" data-val="mobile_penetration" data-color="#9F7D60">
+        <div class="list-box"></div> Mobile Subscription Penetration
+      </div>
+      <div class="legend data" data-val="internet_penetration" data-color="#3CBEA0">
+        <div class="list-box"></div> Data/Internet Services Penetration
+      </div>
+    </div>
+    <div  id="canvas_telecom_glance"></div>
+    <a class="button" data-slide="4" title=""><span>Scroll Down</span></a>
+  </div>
+
+</section>
+	<section class="wrap-out operators" data-slide="4">
 	<div class="wrap">
 		<div class="wrap-title">
-		  <h1>Service Providers</h1>
+		  <h1>Telecommunication Market Share</h1>
 	      <div class="help">
 	         <a href="#help_service_provider" rel="leanModal"><img src="images/question-icon.png" alt="" width="28" height="28"></a>
 	         <div id="help_service_provider" class="leanModal">
@@ -59,7 +91,7 @@
 			  <div style="color: rgb(37, 220, 228)"><span>&#9899; STPL 3%</span></div>
 			  <div style="color: #DEC628"><span>&#9899; NSTPL 1%</span></div>
 			</div>
-			<h2>TELEPHONE MARKET SHARE</h2>
+			<h2>MARKET SHARE OF TELCONS</h2>
 		  </div>
 
 		  <div class="circular_chart" style="width: 300px; height: 300px;">
@@ -80,7 +112,7 @@
 			  <div style="color: #FE9F8B"><span>&#9899; UTL 1%</span></div>
 			  <div style="color: rgb(37, 220, 228)"><span>&#9899; STPL 1%</span></div>
 			</div>
-			<h2>INTERNET MARKET SHARE</h2>
+			<h2>MARKET SHARE OF INTERNET SERVICES</h2>
 		  </div>
 
       <div class="operators-block">
@@ -132,42 +164,11 @@
 
 
 			</div>
-	<a class="button" data-slide="4" title=""><span>Scroll Down</span></a>
+	<a class="button" data-slide="6" title=""><span>Scroll Down</span></a>
 	</section>
 
-<section class="wrap-out graphs" data-slide="4">
-	<div class="wrap">
-		<div class="wrap-title">
-		  <h1>Penetration Statistics</h1>
-	      <div class="help">
-	      	<a href="#help_stats" rel="leanModal"><img src="images/question-icon.png" alt="" width="28" height="28"></a>
-	         <div id="help_stats" class="leanModal">
-            <div class="modal-header">
-              <h2>Penetration Statistics</h2>
-              <a class="modal_close" href="javascript:void(0)"></a>
-            </div>
-            <p>Some text about Statistics and circles.</p>
-           </div>
-        </div>
-		</div>
-		<div class="legend-group">
-      <div class="legend tele active" data-val="tele_penetration" data-color="#e2674a">
-        <div class="list-box"></div> Telephony Services Penetration
-      </div>
-      <div class="legend mobile" data-val="mobile_penetration" data-color="#9F7D60">
-        <div class="list-box"></div> Mobile Services Penetration
-      </div>
-      <div class="legend data" data-val="internet_penetration" data-color="#3CBEA0">
-        <div class="list-box"></div> Data/Internet Services Penetration
-      </div>
-    </div>
-		<div  id="canvas_telecom_glance"></div>
-    <a class="button" data-slide="5" title=""><span>Scroll Down</span></a>
-	</div>
 
-</section>
-
-<section class="wrap-out policies" data-slide="5">
+<!-- <section class="wrap-out policies" data-slide="5">
 	<div class="wrap">
 		<div class="wrap-title">
 		  <h1>Policies</h1>
@@ -234,10 +235,11 @@
 	</div>
 	</div>
     <a class="button" data-slide="6" title=""><span>Scroll Down</span></a>
-</section>
+</section> -->
 <section class="wrap-out punchline" data-slide="6">
   <div class="wrap">
-    <div class="punch-line">What Does it mean to<span>Economic Perspective</span>of Nepal?</div>
+    <!-- <div class="punch-line">What Does it mean to<span>Economic Perspective</span>of Nepal?</div> -->
+    <div class="punch-line"><span>Have Your Say</span></div>
       <div id="disqus_thread"></div>
     </div>
     <a class="button" data-slide="7" title=""><span>Scroll Down</span></a>

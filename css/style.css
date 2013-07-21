@@ -110,7 +110,7 @@ body {
   height: 50px;
   position: absolute;
   bottom: 0px;
-  left: 50%;
+  left: 48.5%;
   background-image: url(../images/arrow.png);
   -webkit-border-radius: 7px 7px 0px 0px;
   border-radius: 7px 7px 0px 0px;
@@ -163,6 +163,13 @@ body {
   background: #ffcc66;
   text-align: center;
   color: #fff;
+}
+
+.title h1 {
+  color: #444;
+  font-size: 22px;
+  font-family: 'ubuntu';
+  text-transform: uppercase;
 }
 
 .wrap h1.index{
