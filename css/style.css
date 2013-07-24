@@ -370,7 +370,7 @@ a img {
 
 .operators-block .operators-list{
   display: inline-block;
-  margin: 50px 80px 20px;
+  margin: 45px 55px 50px;
   transition: opacity .2s linear .2s;
   -webkit-transition: opacity .2s linear .2s;
   -moz-transition: opacity .2s linear .2s;
@@ -676,7 +676,9 @@ a img {
 .stpl{
   background: #db354c;
 }
-
+.nst{
+  background: rgb(214, 198, 15);
+}
 .milestones iframe {
   height: auto!important;
 }
