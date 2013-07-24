@@ -119,18 +119,23 @@ body {
   z-index: 10000;
 }
 
+.title .button {
+  background: url(../images/arrow.gif) no-repeat 12px 0;
+}
+
 
 .button:hover {
   background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
-.title .button,.title .button:hover {
-  background: url(../images/arrow.gif) no-repeat 0 0;
+.title .button:hover {
+  background:  rgba(255, 255, 255, 0.3) url(../images/arrow.png) no-repeat 0 0;
 }
 
-.title .button:hover span {
-  display: none;
+
+.title .button span {
+  display: block;
 }
 
 .button span {
