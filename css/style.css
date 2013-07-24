@@ -119,9 +119,18 @@ body {
   z-index: 10000;
 }
 
+
 .button:hover {
   background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
+}
+
+.title .button,.title .button:hover {
+  background: url(../images/arrow.gif) no-repeat 0 0;
+}
+
+.title .button:hover span {
+  display: none;
 }
 
 .button span {
@@ -376,10 +385,15 @@ a img {
   -moz-transition: opacity .2s linear .2s;
 }
 
+.operators-block .operators-list a {
+  display: block;
+}
+
 .operators-block .operators-list img {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
+  vertical-align: bottom;
 }
 
 .operators-list img:hover{
