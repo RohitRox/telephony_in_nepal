@@ -106,14 +106,15 @@ body {
 
 .button {
   display: block;
-  width: 50px;
+  width: 4%;
   height: 50px;
   position: absolute;
-  bottom: 0px;
-  left: 48.5%;
-  background-image: url(../images/arrow.png);
-  -webkit-border-radius: 7px 7px 0px 0px;
-  border-radius: 7px 7px 0px 0px;
+  bottom: 0;
+  left: 48%;
+  background: url(../images/arrow.png) 3px 0;
+  -webkit-border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
   cursor: pointer;
   z-index: 10000;
 }
@@ -249,11 +250,11 @@ a img {
 
 .legend-group{
   float: right;
-  background: #fff;
   border-radius: 6px;
   margin: 0px 0 40px;
   font-family: 'ubuntu';
   font-size: 13px;
+
 }
 .legend{
   float: left;
@@ -262,6 +263,12 @@ a img {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: .8;
+  margin-right: 6px;
+  background: #e3e3e3;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
+  box-shadow: inset 0 0 1px 1px #f6f6f6;
 }
 .legend .list-box{
   height: 16px;

@@ -7,6 +7,39 @@ $(document).ready(function(){
 
   $("a[rel*=leanModal]").leanModal({closeButton: ".modal_close"});
 
+  var slide_count = $('.navigation li').length;
+
+
+  $(document).keyup(function(e){
+    if( e.keyCode == 37 || e.keyCode == 39){
+      e.preventDefault();
+      var _timeline_frame = document.getElementById('timeline_frame');
+      if( $(_timeline_frame).isOnScreen() ){
+        var cw = _timeline_frame.contentWindow;
+        if ( e.keyCode == 37 ){
+          cw.VMM.fireEvent(".nav-previous","click", this.onPrevClick);
+        }else if(e.keyCode == 39){
+          cw.VMM.fireEvent(".nav-next","click", this.onNextClick);
+        }else{
+          return;
+        }
+      }else{
+        return;
+      }
+
+    }else if(e.keyCode == 38 || e.keyCode == 40){
+      var curr = $('.navigation li.active').data('slide');
+      if( (slide_count == curr && e.keyCode == 40) || (curr == 1 && e.keyCode == 38) )
+        return;
+      e.preventDefault();
+      var point = e.keyCode == 38 ? (curr-1) : (curr+1);
+      goToByScroll(point);
+    }
+    else{
+      return;
+    }
+  });
+
 });
   // operators circular charts
 
@@ -295,17 +328,6 @@ $(document).ready(function ($) {
       }
       }
 
-      //GESTISCO LE GIF VISIBILI
-      if (direction == "down") {
-        $("#slide" + (parseInt(dataslide) - 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) - 1) + "_still.gif')");
-        $("#slide" + (parseInt(dataslide) + 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) + 1) + ".gif')");
-      } else {
-        $("#slide" + (parseInt(dataslide) + 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) + 1) + "_still.gif')");
-        $("#slide" + (parseInt(dataslide) - 1)).css("backgroundImage","url('ui/img/anims/slide" + (parseInt(dataslide) - 1) + ".gif')");
-      }
-
-      if ($("#slide" + dataslide).css("backgroundImage") == "url('ui/img/anims/slide" + dataslide + "_still.gif')")
-        $("#slide" + dataslide).css("backgroundImage","url('ui/img/anims/slide" + dataslide + ".gif')");
   });
 
     //waypoints doesnt detect the first slide when user scrolls back up to the top so we add this little bit of code, that removes the class
@@ -324,7 +346,8 @@ $(document).ready(function ($) {
 
     //Create a function that will be passed a slide number and then will scroll to that slide using jquerys animate. The Jquery
     //easing plugin is also used, so we passed in the easing method of 'easeInOutQuint' which is available throught the plugin.
-    function goToByScroll(dataslide) {
+    window.goToByScroll = function(dataslide) {
+      console.log(dataslide);
       htmlbody.animate({
             scrollTop: $('.wrap-out[data-slide="' + dataslide + '"]').offset().top
       }, 1000, 'easeInOutExpo', function() { //era 600 easeOutQuint

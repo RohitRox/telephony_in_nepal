@@ -27,10 +27,25 @@
 		<script src="../js/jquery-1.7.2.min.js"></script>
 		<script src="assets/js/timeline-min.js"></script>
 		<script type="text/javascript">
-            $(function(){
 
-                var timeline = new VMM.Timeline();
-                timeline.init("../json/milestones.json");
+        $(function(){
+
+            var timeline = new VMM.Timeline();
+            timeline.init("../json/milestones.json");
+
+            $(document).keyup(function(e){
+                if( e.keyCode == 37 || e.keyCode == 39){
+                    if ( e.keyCode == 37 ){
+                      VMM.fireEvent(".nav-previous","click", this.onPrevClick);
+                    }else if(e.keyCode == 39){
+                      VMM.fireEvent(".nav-next","click", this.onNextClick);
+                    }else{
+                      return;
+                    }
+                }else{
+                return;
+                }
+              });
 
             });
         </script>
