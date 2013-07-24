@@ -9,6 +9,7 @@ $(document).ready(function(){
 
   var slide_count = $('.navigation li').length;
 
+  $('.tooltip').tipsy();
 
   $(document).keyup(function(e){
     if( e.keyCode == 37 || e.keyCode == 39){
@@ -58,16 +59,16 @@ $(document).ready(function(){
     });
 
     var x = w/2, y = h/2;
-
+    data_array.reverse();
     var layer = new Kinetic.Layer();
-    var radius = 80;
+    var radius = (data_array.length * 32);
     var startAngle = 0;
 
     for(var i = 0; i < data_array.length; i++){
-
+      do_chart(i);
+    }
+    function do_chart(i){
     var data_value = data_array[i].value;
-
-    $('#legends').append('<div><span style="background: '+"rgba(255,255,255,.8)"+';"></span>'+data_array[i].data+'</div>');
 
     var endAngle = startAngle + value_to_angle(data_value);
 
@@ -86,11 +87,6 @@ $(document).ready(function(){
       strokeWidth: 9
       });
 
-    arc.on('mousemove', function() {
-
-
-
-    });
 
     startAngle = endAngle;
 
@@ -105,7 +101,22 @@ $(document).ready(function(){
     layer.add(circle_outer);
     layer.add(arc);
 
-    radius += 18;
+    arc.on('mouseover', function(e) {
+        (new Kinetic.Tween({
+        node: this,
+        strokeWidth: 18,
+        easing: Kinetic.Easings['ElasticEaseInOut']
+        })).play();
+      });
+      arc.on('mouseout', function(e) {
+        (new Kinetic.Tween({
+        node: this,
+        strokeWidth: 9,
+        easing: Kinetic.Easings['ElasticEaseInOut']
+        })).play();
+      });
+
+    radius -= 15;
     }
 
     stage.add(layer);
@@ -113,8 +124,8 @@ $(document).ready(function(){
 
 
   var telephone_penetration_data = [
-  {data: "Mobile(GSM, CDMA)", color: "rgb(195, 133, 236)", value: 68.45},
-  {data: "Fixed(Pstn, WLL)", color: "rgb(133, 218, 113)", value: 5.52},
+  {data: "Mobile (GSM, CDMA)", color: "rgb(195, 133, 236)", value: 68.45},
+  {data: "Fixed (Pstn, WLL)", color: "rgb(133, 218, 113)", value: 5.52},
   {data: "Others (LM, GMPCS)", color: "#FE9F8B", value: 3.14}
   ];
 
