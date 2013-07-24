@@ -676,3 +676,7 @@ a img {
 .stpl{
   background: #db354c;
 }
+
+.milestones iframe {
+  height: auto!important;
+}

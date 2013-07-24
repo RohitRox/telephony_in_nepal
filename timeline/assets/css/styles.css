@@ -222,9 +222,9 @@ section, footer, header{
 #timeline .slider-item img {
 	border-radius: 50%;
 	max-height: 400px!important;
-	height: 360px;
+	height: 320px;
 	border: 3px dotted rgba(222,222,222,.8);
-	width: 360px;
+	width: 320px;
 	padding: 10px;
 }
 
