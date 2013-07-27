@@ -180,13 +180,6 @@ body {
   color: #fff;
 }
 
-.title h1 {
-  color: #444;
-  font-size: 22px;
-  font-family: 'ubuntu';
-  text-transform: uppercase;
-}
-
 .wrap h1.index{
   font-size: 75px;
   margin-top: 60px;
