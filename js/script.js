@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   var slide_count = $('.navigation li').length;
 
-  $('.tooltip').tipsy();
+  $('.tooltip').tipsy({gravity: function() { return this.getAttribute('data-placement') == undefined ? 'n' : this.getAttribute('data-placement') } });
 
   $(document).keyup(function(e){
     if( e.keyCode == 37 || e.keyCode == 39){
