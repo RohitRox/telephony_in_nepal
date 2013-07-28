@@ -354,8 +354,7 @@ a img {
 
 .legend:active {
     border: none;
-    bottom: -4px;
-    margin-bottom: 22px;
+    bottom: -1px;
     -webkit-box-shadow: 0 1px 1px #fff;
     -moz-box-shadow:  0 1px 1px #fff;
     box-shadow:  1px 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.3);
