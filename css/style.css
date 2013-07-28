@@ -263,19 +263,57 @@ a img {
   font-size: 13px;
 
 }
-.legend{
+
+.legend {
+  display: block;
   float: left;
+  position: relative;
+  height: 18px;
+}
+
+.legend:before,
+.legend:after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    bottom: -1px;    
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 25px;
+  }
+
+.legend:before { 
+  height: 16px;
+    bottom: -4px;
+    border-top: 0;    
+    -webkit-border-radius: 0 0 3px 3px; 
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;    
+    -webkit-box-shadow: 0 1px 1px 0px #bfbfbf;
+    -moz-box-shadow: 0 1px 1px 0px #bfbfbf;
+    box-shadow: 0 1px 1px 0px #bfbfbf;
+  }
+
+.legend,.legend:hover,.legend:visited{
   padding: 6px;
   cursor: pointer;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+/*  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: .8;
-  margin-right: 6px;
+  opacity: .8; 
   background: #e3e3e3;
   border: 1px solid #bbb;
-  border-radius: 3px;
   -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
-  box-shadow: inset 0 0 1px 1px #f6f6f6;
+  box-shadow: inset 0 0 1px 1px #f6f6f6;*/
+  color: #555;
+  border-radius: 6px;
+  border-bottom: 4px solid #b2b1b1;
+  text-shadow: 0px 1px 0px #fafafa;    
+  background: #eee;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#e2e2e2));
+  background: -moz-linear-gradient(top,  #eee,  #e2e2e2);    
+  box-shadow: inset 1px 1px 0 #f5f5f5;
+  margin-right: 6px;
 }
 .legend .list-box{
   height: 16px;
@@ -303,10 +341,31 @@ a img {
 .legend.data{
   color: #3CBEA0;
 }
-.legend.active, .legend:hover{
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
+
+.legend:before,.legend:after {
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.legend:hover {
+  background: #e2e2e2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), to(#eee));
+  background: -moz-linear-gradient(top,  #e2e2e2,  #eee);
+}
+
+.legend:active {
+    border: none;
+    bottom: -4px;
+    margin-bottom: 22px;
+    -webkit-box-shadow: 0 1px 1px #fff;
+    -moz-box-shadow:  0 1px 1px #fff;
+    box-shadow:  1px 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.legend:active:before,
+.legend:active:after {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 /*operators*/
@@ -413,7 +472,7 @@ a img {
 
 .legends_chart div{
   font-size: 13px;
-  line-height: 22px;
+  margin-bottom: 4px;
   padding-left: 20px;
 }
 
