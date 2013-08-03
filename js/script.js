@@ -158,7 +158,7 @@ $(document).ready(function(){
   {date: "Dec, 2012", tele_penetration: 70.61, internet_penetration: 22.22, mobile_penetration: 62.68},
   {date: "Apr, 2013", tele_penetration: 75.46, internet_penetration: 25.67, mobile_penetration: 66.96 }
   ];
-  var width = 920, height = 420;
+  var width = 920, height = 380;
   var gap = 140;
 
   function stage_init(){
@@ -263,7 +263,7 @@ $(document).ready(function(){
       var line_join = new Kinetic.Line({
           points: p_arr,
           stroke: '#fff',
-          strokeWidth: 4
+          strokeWidth: 3
         });
       layer.add(line_join);
       stage.add(layer);
