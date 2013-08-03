@@ -628,6 +628,13 @@ a img {
   text-shadow: 0px 1px 1px rgba(22, 11, 6, .8);
 }
 
+.footer ul li span {
+  display: block;
+  color: #bbb;
+  font-style: italic;
+  margin: 4px 0;
+}
+
 .kineticjs-content {
   height: 350px!important;
 }
