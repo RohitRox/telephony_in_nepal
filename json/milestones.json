@@ -65,6 +65,15 @@
                 }
             },
             {
+                "startDate":"1/1/1998",
+                "headline":"Nepal Telecommunications Authority",
+                "text":"On Feb 1998 in accordance with Telecommunications Act, 1997 and Telecommunications Regulation, 1998, an autonomous body, the telecommunications regulatory body of Nepal, Nepal Telecommunications Authority (NTA) was established. It's objective is to create a favorable and competitive environment for the development, expansion and operation of telecommunications services with the private sector participation in Nepal.",
+                "asset":
+                {
+                    "media":"assets/img/shots/nta.png"
+                }
+            },
+            {
                 "startDate":"1/1/1999",
                 "headline":"GSM Arrives",
                 "text":"End of 90s, in 1999, Nepal Telecom finally launches GSM Mobile service",

@@ -156,7 +156,7 @@ $(document).ready(function(){
   {date: "Dec, 2011", tele_penetration: 56.46, internet_penetration: 14.55, mobile_penetration: 50.16},
   {date: "Jun, 2012", tele_penetration: 63.76, internet_penetration: 18.75, mobile_penetration: 56.55},
   {date: "Dec, 2012", tele_penetration: 70.61, internet_penetration: 22.22, mobile_penetration: 62.68},
-  {date: "Apr, 2013", tele_penetration: 75.46, internet_penetration: 25.67, mobile_penetration: 66.96 }
+  {date: "Jun, 2013", tele_penetration: 75.46, internet_penetration: 25.67, mobile_penetration: 66.96 }
   ];
   var width = 920, height = 380;
   var gap = 140;
