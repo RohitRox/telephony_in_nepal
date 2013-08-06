@@ -365,7 +365,7 @@ a img {
 
 .operators-block .operators-list{
   display: inline-block;
-  margin: 70px 30px 35px;
+  margin: 50px 30px 35px;
   transition: opacity .2s linear .2s;
   -webkit-transition: opacity .2s linear .2s;
   -moz-transition: opacity .2s linear .2s;
@@ -547,7 +547,7 @@ a img {
 .footer ul li {
   list-style: none;
   float: left;
-  margin-left: 296px;
+  margin-left: 290px;
 }
 
 .footer ul li a {
