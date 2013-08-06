@@ -258,7 +258,7 @@ a img {
 .legend-group{
   float: right;
   border-radius: 6px;
-  margin: 0px 0 40px;
+  margin: -20px 0 40px;
   font-family: 'ubuntu';
   font-size: 13px;
 
@@ -286,13 +286,13 @@ a img {
   transition: all 0s linear 0s;
   box-shadow: 1px 1px 2px #333;
 }
-.legend.mobile {
+.legend.mobile.active {
   color: #C98851;
 }
-.legend.data{
+.legend.data.active{
   color: #3CBEA0;
 }
-.legend.tele{
+.legend.tele.active{
   color: #e2674a;
 }
 
