@@ -1,5 +1,16 @@
 [
 {
+date: "14 June, 2013",
+dial_up: 15411,
+wireless_modem_n_optical_fiber: 56896,
+cabel_modem: 18374,
+adsl: 112869,
+gprs_edge: 6406348,
+cdma_evdo: 229390,
+wimax: 1886,
+total: 25.82
+},
+{
 date: "14 May, 2013",
 dial_up: 15425,
 wireless_modem_n_optical_fiber: 56896,
