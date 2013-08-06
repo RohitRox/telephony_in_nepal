@@ -365,7 +365,7 @@ a img {
 
 .operators-block .operators-list{
   display: inline-block;
-  margin: 50px 30px 35px;
+  margin: 50px 36px 35px;
   transition: opacity .2s linear .2s;
   -webkit-transition: opacity .2s linear .2s;
   -moz-transition: opacity .2s linear .2s;
@@ -565,7 +565,7 @@ a img {
   margin: 4px 0;
 }
 
-.kineticjs-content {
+#tele_market_share .kineticjs-content {
   height: 350px!important;
 }
 

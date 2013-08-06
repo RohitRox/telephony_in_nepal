@@ -188,7 +188,7 @@ $(document).ready(function(){
         stroke: "#fff",
         strokeWidth: 1
       });
-      var per = new Kinetic.Text({x:4,y:height-tmp+4, text: 25*i+" %", fill: "#fff", fontFamily: "ubuntu"});
+      var per = new Kinetic.Text({x:4,y:height-tmp+4, text: 25*i+" %", fill: "#fff", fontFamily: "ubuntu",textAlign:"center"});
       layer.add(per);
       layer.add(line);
     }
