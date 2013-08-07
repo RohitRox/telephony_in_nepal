@@ -635,7 +635,7 @@ a img {
   display: none;
 }
 .leanModal{
-  width: 520px;
+  width: 600px;
   display: none;
   background: #FFF;
   font-family: 'ubuntu', helvetica, arial;
@@ -646,7 +646,7 @@ a img {
 
 .leanModal p{
   padding: 30px;
-  text-align: justify;
+  text-align: left;
   margin-top: 0px;
   line-height: 1.6em;
 }
@@ -660,16 +660,21 @@ a img {
   font-size: 1.6em;
   font-weight: 700;
   margin-bottom: 3px;
+  padding-left: 12px;
+  text-align: left;
 }
 .modal_close{
-  position: absolute;
+ position: absolute;
   top: 12px;
-  right: 12px;
+  right: 24px;
   display: block;
-  width: 15px;
-  height: 15px;
-  background: url(/images/modal_close.png);
+  width: 24px;
+  line-height: 24px;
   z-index: 2;
+  background: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  color: #1a86ac;
+  font-weight: bold;
 }
 .ncell{
   background: #642d88;
