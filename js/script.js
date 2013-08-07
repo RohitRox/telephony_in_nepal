@@ -11,35 +11,36 @@ $(document).ready(function(){
 
   $('.tooltip').tipsy({gravity: function() { return this.getAttribute('data-placement') == undefined ? 'n' : this.getAttribute('data-placement') } });
 
-  $(document).keyup(function(e){
-    if( e.keyCode == 37 || e.keyCode == 39){
-      e.preventDefault();
-      var _timeline_frame = document.getElementById('timeline_frame');
-      if( $(_timeline_frame).isOnScreen() ){
-        var cw = _timeline_frame.contentWindow;
-        if ( e.keyCode == 37 ){
-          cw.VMM.fireEvent(".nav-previous","click", this.onPrevClick);
-        }else if(e.keyCode == 39){
-          cw.VMM.fireEvent(".nav-next","click", this.onNextClick);
-        }else{
-          return;
-        }
-      }else{
-        return;
-      }
+  // $(document).keyup(function(e){
+  //   if( e.keyCode == 37 || e.keyCode == 39){
+  //     e.preventDefault();
+  //     var _timeline_frame = document.getElementById('timeline_frame');
+  //     if( $(_timeline_frame).isOnScreen() ){
+  //       var cw = _timeline_frame.contentWindow;
+  //       if ( e.keyCode == 37 ){
+  //         cw.VMM.fireEvent(".nav-previous","click", this.onPrevClick);
+  //       }else if(e.keyCode == 39){
+  //         cw.VMM.fireEvent(".nav-next","click", this.onNextClick);
+  //       }else{
+  //         return;
+  //       }
+  //     }else{
+  //       return;
+  //     }
 
-    }else if(e.keyCode == 38 || e.keyCode == 40){
-      var curr = $('.navigation li.active').data('slide');
-      if( (slide_count == curr && e.keyCode == 40) || (curr == 1 && e.keyCode == 38) )
-        return;
-      e.preventDefault();
-      var point = e.keyCode == 38 ? (curr-1) : (curr+1);
-      goToByScroll(point);
-    }
-    else{
-      return;
-    }
-  });
+  //   }else if(e.keyCode == 38 || e.keyCode == 40){
+  //     var curr = $('.navigation li.active').data('slide');
+  //     if( (slide_count == curr && e.keyCode == 40) || (curr == 1 && e.keyCode == 38) )
+  //       return;
+  //     e.preventDefault();
+  //     var point = e.keyCode == 38 ? (curr-1) : (curr+1);
+  //     console.log(point);
+  //     goToByScroll(point);
+  //   }
+  //   else{
+  //     return;
+  //   }
+  // });
 
 });
   // operators circular charts
